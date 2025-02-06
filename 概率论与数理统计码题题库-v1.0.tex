@@ -1,0 +1,4251 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 整理者：inkegle
+% 日期：2025年2月6日
+% version：1.0
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{exam-zh}
+\usepackage{siunitx}
+\usepackage{diagbox}
+\usepackage{float}
+
+\examsetup{
+  page/size=a4paper,
+  title/title-format=\LARGE \bfseries,
+  page/foot-content=概率论与数理统计码题题库\,第;页(共;页),
+  paren/show-paren=true,
+  paren/show-answer=false,
+  fillin/show-answer=false,
+  solution/show-solution=show-stay,
+  solution/label-indentation=false
+}
+
+\everymath{\displaystyle}
+
+\title{概率论与数理统计码题题库}
+
+\begin{document}
+
+\maketitle
+
+本文档由inkegle\footnote{inkegle@outlook.com}使用\LaTeX{}模板\href{https://gitee.com/xkwxdyy/exam-zh}{exam-zh}\footnote{https://gitee.com/xkwxdyy/exam-zh}整理排版。
+原始题库来自码题，尽管尽力校对，但难免存在错误，如有疑问，请以官方题库为准。如使用本文档视为了解风险。
+本文档免费发布，\LaTeX{}代码开源，见github仓库\footnote{https://github.com/inkegle/PMS-QRcode-TestBank}，请勿用于商业用途。
+如遇Bug请联系我修改，或提交Issue。
+
+% \tableofcontents
+
+\section{随机事件和概率}
+
+% 1.
+\begin{question}
+  设A，B，C表示三个事件，则$\bar{A}\bar{B}\bar{C}$表示 \paren[D]
+  \begin{choices}
+    \item A，B，C中有一个发生
+    \item A，B，C中恰有两个发生
+    \item A，B，C中不多于一个发生
+    \item A，B，C都不发生
+  \end{choices}
+\end{question}
+
+% 2.
+\begin{question}
+  打靶n (n$\geqslant $1)发，事件A表示“击中i发”i=1.2...n，那么事件$\bigcup_{1\leqslant i\le n}{A_i}$表示 \paren[B]
+  \begin{choices}
+    \item n发全部击中
+    \item n发中至少击中一发
+    \item n发中至多击中一发
+    \item n发中恰好击中一发
+  \end{choices}
+\end{question}
+
+% 3.
+\begin{question}
+  设A,B为两个随机事件，且$P(A)=0.6$, $P(B)=0.7$，则$P(AB)$的最小值等于 \paren[B]
+  \begin{choices}
+    \item 0.6
+    \item 0.3
+    \item 0.1
+    \item 0
+  \end{choices}
+\end{question}
+
+% 4.
+\begin{question}
+  对一批次品率为$p$$(0<p<1)$的产品逐一检测，则第二次或第二次后才检测到次品的概率为 \paren[B]
+  \begin{choices}
+    \item $p$
+    \item $1-p$
+    \item $(1-p)p$
+    \item $(2-p)p$
+  \end{choices}
+\end{question}
+
+% 5.
+\begin{question}
+  关系（\quad ）成立，则事件A，B为互逆事件 \paren[C]
+  \begin{choices}
+    \item $AB=\diameter$
+    \item $A\cup B=S$
+    \item $AB=\diameter$, $A\cup B=S$
+    \item $P\left( AB \right) =0$, $P\left( A\cup B \right) =1$
+  \end{choices}
+\end{question}
+
+
+% 6.
+\begin{question}
+  设随机事件A，B互不相容，且$P(A)=0.4$，$P(B)=0.2$，则$P\left( A|B \right) =$ \paren[A]
+  \begin{choices}
+   \item 0
+   \item 0.2
+   \item 0.4
+   \item 0.5
+  \end{choices}
+\end{question}
+
+% 7.
+\begin{question}
+  设$P(A)=\frac{1}{2}$，$P(A)=\frac{1}{3}$，$P(AB)=\frac{1}{6}$，则随机事件A，B \paren[A]
+  \begin{choices}
+   \item 相互独立
+   \item 相等
+   \item 互不相容
+   \item 互为对立事件
+  \end{choices}
+\end{question}
+
+% 8.
+\begin{question}
+  已知$P(A)=0.3$，$P(B)=0.5$，$P(AB)=0.15$，则下列选项不对的是 \paren[C]
+  \begin{choices}
+   \item $P(B|A)=P(B)$
+   \item $P(B|\overline{A})=P(B)$
+   \item $P(A|B)=P(B)$
+   \item $P(A|\overline{B})=P(A)$
+  \end{choices}
+\end{question}
+
+% 9.
+\begin{question}
+  假设一批产品中一、二、三等品各占$60\%$、$30\%$、$10\%$，今从中随机取一件产品，结果不是三等品，则它是二等品的概率为 \paren[A]
+  \begin{choices}
+   \item $\frac{1}{3}$
+   \item $\frac{2}{3}$
+   \item $\frac{3}{10}$
+   \item $\frac{7}{10}$
+  \end{choices}
+\end{question}
+
+% 10.
+\begin{question}
+  设$0<P(B_i)<1,i=1,2,...,n$，则在全概率公式$P\left( B \right) =\sum_{i=1}^n{P\left( A|B_i \right) P\left( B_i \right)}$中，要求事件$B_i,i=1,2,...,n$必须满足 \paren[A]
+  \begin{choices}
+   \item 两两不相容，且$\bigcup_{i=1}^n{B_i=S}$
+   \item 两两不相容
+   \item 两两独立
+   \item 相互独立
+  \end{choices}
+\end{question}
+
+% 11.
+\begin{question}
+  假设1000件产品中有200件是不合格品，依次不放回抽取两件产品，则第二次取到不合格品的概率为 \paren[D]
+  \begin{choices}
+   \item $\frac{200}{999}$
+   \item $\frac{199}{999}$
+   \item $\frac{200}{1000} \times \frac{199}{999}$
+   \item $\frac{200}{1000}$
+  \end{choices}
+\end{question}
+
+% 12.
+\begin{question}
+  设A，B为随机事件，且$B\subset A$，则$B-\bar{A}$等于\paren[B]
+  \begin{choices}
+   \item $A$
+   \item $B$
+   \item $\diameter$
+   \item $\bar{A}\cap B$
+  \end{choices}
+\end{question}
+
+% 13.
+\begin{question}
+  设A，B为两独立事件，且$P(B)=0.4$, $P(A\cup B)=0.8$，则$P(\overline{B}|A)=$ \paren[C]
+  \begin{choices}
+   \item 0.5
+   \item 0.3
+   \item 0.6
+   \item 0.4
+  \end{choices}
+\end{question}
+
+% 14.
+\begin{question}
+  掷一枚质地均匀的骰子，则在出现奇数点的条件下出现3点的概率为 \paren[A]
+  \begin{choices}
+    \item $\frac{1}{3}$
+    \item $\frac{2}{3}$
+    \item $\frac{1}{6}$
+    \item $\frac{3}{6}$
+  \end{choices}
+\end{question}
+
+% 15.
+\begin{question}
+  将一枚均匀硬币连掷三次，观察正、反面出现的情况，则样本空间元素个数为 \paren[B]
+  \begin{choices}
+   \item 4
+   \item 8
+   \item 3
+   \item 2
+  \end{choices}
+\end{question}
+
+% 16.
+\begin{question}
+  设随机事件A, B互不相容，且有 $ P(A) > 0, P(B) > 0 $，则下列选项成立的是 \paren[B]
+  \begin{choices}
+    \item $A,B$一定独立  
+    \item $A,B$一定不独立  
+    \item 事件$A$发生的概率可能为1  
+    \item $A,B$可能独立也可能不独立  
+  \end{choices}
+\end{question}
+
+% 17.
+\begin{question}
+  关于事件的独立性，下列结论正确的是 \paren[B]
+  \begin{choices}
+    \item 若 $P\left(\prod_{i=1}^{n} A_i\right) = \prod_{i=1}^{n} P(A_i), n > 2$，则 $A_1, A_2, \cdots, A_n$ 相互独立
+    \item 若 $A, B$ 相互独立，则 $\overline{A}, B$ 也相互独立
+    \item 若 $A_1, A_2, \cdots, A_n, n > 2$ 两两独立，则 $A_1, A_2, \cdots, A_n$ 相互独立
+    \item 若 $A_1$ 与 $A_2$ 独立，$A_1$ 与 $A_2$ 独立，则 $A_1$ 与 $A_2$ 独立
+  \end{choices}
+\end{question}
+
+% 18.
+\begin{question}
+  在$1$到$9$这些数字中任取两个数，其和小于 $6$ 的概率为 \paren[B]
+  \begin{choices}
+    \item $\frac{4^2}{9^2}$  
+    \item $\frac{4}{C_9^2}$  
+    \item $\frac{12}{A_{9}^{2}}$  
+    \item $\frac{4!}{9!}$  
+  \end{choices}
+\end{question}
+
+% 19.
+\begin{question}
+  设 $A, B$ 互为对立事件，则 $P(\overline{A} \cup \overline{B}) =$ \paren[A]
+  \begin{choices}
+    \item $1$  
+    \item $0$  
+    \item $P(\overline{A})$  
+    \item $P(\overline{B})$  
+  \end{choices}
+\end{question}
+
+% 20.
+\begin{question}
+  设 $A, B$ 为两个随机事件，且 $P(A \cup B) = 1$，则 \paren[D]
+  \begin{choices}
+    \item $A, B$ 互不相容（互斥）；
+    \item $P(A) + P(B) \leq 1$；
+    \item $A, B$ 是不可能事件；
+    \item $P(A) + P(B) \geq 1$。
+  \end{choices}
+\end{question}
+
+% 21.
+\begin{question}
+  设 $A, B$ 为随机事件，$P(A) = 0.5$，$P(A - B) = 0.2$，则  
+  $P(\overline{AB}) = $ \paren[C]
+  \begin{choices}
+    \item $0$  
+    \item $0.3$  
+    \item $0.7$  
+    \item $0.8$  
+  \end{choices}
+\end{question}
+
+% 22.
+\begin{question}
+  已知 $P(A) = 0.5, P(B) = 0.6$ 以及 $P(B|A) = 0.8$，则  
+  $P(B|A \cup B)$ 等于 \paren[D]
+  \begin{choices}
+    \item $\frac{4}{5}$  
+    \item $\frac{6}{11}$  
+    \item $\frac{3}{4}$  
+    \item $\frac{6}{7}$  
+  \end{choices}
+\end{question}
+
+% 23.
+\begin{question}
+  有三个箱子，第一个箱子中有 $4$ 个黑球，$1$ 个白球；第二个箱子中有 $3$ 个黑球，$3$ 个白球；第三个箱子中有 $3$ 个黑球，$5$ 个白球。现随机地取一个箱子，再从这个箱子中取出一个球，已知取出的球是白球，此球属于第二个箱子的概率为 \paren[A]
+  \begin{choices}
+    \item $\frac{20}{53}$  
+    \item $\frac{13}{53}$  
+    \item $\frac{1}{2}$  
+    \item $\frac{1}{6}$  
+  \end{choices}
+\end{question}
+
+% 24.
+\begin{question}
+  设 $A, B$ 为两个随机事件，且 $0 < P(A), P(B) < 1, P(A|B) = P(A|\overline{B})$，则 \paren[B]
+  \begin{choices}
+    \item $A, B$ 互不相容  
+    \item $A, B$ 相互独立  
+    \item $A, B$ 对立  
+    \item $A, B$ 不独立  
+  \end{choices}
+\end{question}
+
+% 25.
+\begin{question}
+  已知 $P(A) = 0.8, P(B) = 0.7$ 以及 $P(A|B) = 0.8$，则 \paren[B]
+  \begin{choices}
+    \item $A, B$ 互不相容  
+    \item $A, B$ 相互独立  
+    \item $A \subset B$  
+    \item $P(A \cup B) = P(A) + P(B)$  
+  \end{choices}
+\end{question}
+
+% 26.
+\begin{question}
+  设 $A, B$ 为两个随机事件，且 $P(A) > 0$，则  
+  $P(A \cup B | A)$ 等于 \paren[D]
+  \begin{choices}
+    \item $P(AB)$  
+    \item $P(B)$  
+    \item $P(A)$ 
+    \item $1$ 
+  \end{choices}
+\end{question}
+
+% 27.
+\begin{question}
+  设随机事件 $A, B$ 互不相容，且有 $P(A) > 0$, $P(B) > 0$，则 \paren[D]
+  \begin{choices}
+    \item $P(A) = 1 - P(B)$  
+    \item $P(AB) = P(A)P(B)$  
+    \item $P(A \cup B) = 1$  
+    \item $P(\overline{AB}) = 1$  
+  \end{choices}
+\end{question}
+
+% 28.
+\begin{question}
+  设 $A, B$ 为两个随机事件，若  
+  $P(A \cup B) = P(A) + P(B)$，则下列说法正确的是 \paren[B]
+  \begin{choices}
+    \item $A, B$ 互不相容  
+    \item $P(AB) = 0$  
+    \item $A \cup B = S$  
+    \item $AB = \diameter$  
+  \end{choices}
+\end{question}
+
+% 29.
+\begin{question}
+  某地一农业科技实验站，对一批新水稻种子进行试验，已知这批水稻种子的发芽率为 $0.8$，出芽后的幼苗成活率为 $0.9$，在这批水稻种子中，随机地抽取一粒，则这粒水稻种子能成长为幼苗的概率为 \paren[D]
+  \begin{choices}
+    \item $0.02$  
+    \item $0.08$  
+    \item $0.18$  
+    \item $0.72$  
+  \end{choices}
+\end{question}
+
+% 30.
+\begin{question}
+  设 $A, B$ 为两独立事件，$P(B) = 0.4$，  
+  $P(A \cup B) = 0.8$，则 $P(\overline{B} | A) =$ \paren[C]
+  \begin{choices}
+    \item $0.5$  
+    \item $0.3$  
+    \item $0.6$  
+    \item $0.4$  
+  \end{choices}
+\end{question}
+
+% 31.
+\begin{question}
+  将两封信随机地投入四个邮筒中，则未向前面两个邮筒投信的概率为 \paren[A]
+  \begin{choices}
+    \item $\frac{2^2}{4^2}$  
+    \item $\frac{C_2^1}{C_4^2}$  
+    \item $\frac{2!}{A_4^2}$  
+    \item $\frac{2!}{4!}$  
+  \end{choices}
+\end{question}
+
+% 32.
+\begin{question}
+  设 $A, B, C$ 为随机事件，则  
+  $A - (B \cup C) = ( )$ \paren[C]
+  \begin{choices}
+    \item $ABC$  
+    \item $AB\overline{C}$  
+    \item $A\overline{BC}$  
+    \item $A \cup B \cup C$  
+  \end{choices}
+\end{question}
+
+% 33.
+\begin{question}
+  设 $A, B$ 为两个随机事件，且 $P(AB) = 0$，则 \paren[C]
+  \begin{choices}
+    \item $A, B$ 互不相容（互斥）
+    \item $A, B$ 至少有一个是不可能事件
+    \item $AB$ 未必是不可能事件
+    \item $P(A) = 0$ 或 $P(B) = 0$
+  \end{choices}
+\end{question}
+
+% 34.
+\begin{question}
+  已知 $P(A)=0.5, P(B)=0.4$，且 $P(A-B)=0.3$，则  
+  $P(\overline{A} \cup \overline{B}) - P(A \cup B)$ 等于 \paren[A]
+  \begin{choices}
+    \item $0.1$  
+    \item $0.2$  
+    \item $0.3$  
+    \item $0.4$  
+  \end{choices}
+\end{question}
+
+% 35.
+\begin{question}
+  设 $A, A_j, i = 1, 2, \cdots$ 为任意事件，则下列选项不正确的是 \paren[A]
+  \begin{choices}
+    \item $A \cap \left( \bigcup_{i=1}^n A_i \right) = \bigcap_{i=1}^n (A \cup A_i)$
+    \item $A \cup \left( \bigcup_{i=1}^n A_i \right) = \bigcup_{i=1}^n (A \cup A_i)$ 
+    \item $\overline{\bigcup_{i=1}^n A_i} = \bigcap_{i=1}^n \overline{A_i}$
+    \item $A = (A - A_1) \cup (AA_1)$
+  \end{choices}
+\end{question}
+
+% 36.
+\begin{question}
+  设 $A, B$ 为二事件，则 $\overline{A \cup B} = ( )$ \paren[B]
+  \begin{choices}
+    \item $AB$  
+    \item $\bar{A}\bar{B}$  
+    \item A$\overline{B}$  
+    \item $\overline{A} \cup \overline{B}$  
+  \end{choices}
+\end{question}
+
+% 37.
+\begin{question}
+  已知 $P(A) = 0.5, P(B) = 0.6$ 以及 $P(B|A) = 0.8$，则  
+  $P(B|A \cup B)$ 等于 \paren[D]
+  \begin{choices}
+    \item $\frac{4}{5}$  
+    \item $\frac{6}{11}$  
+    \item $\frac{3}{4}$  
+    \item $\frac{6}{7}$  
+  \end{choices}
+\end{question}
+
+% 38.
+\begin{question}
+  有三个箱子，第一个箱子中有 $4$ 个黑球，$1$ 个白球；第二个箱子中有 $3$ 个黑球，$3$ 个白球；第三个箱子中有 $3$ 个黑球，$5$ 个白球。现随机地取一个箱子，再从这个箱子中取出一个球，这个球为白球的概率为 \paren[B]
+  \begin{choices}
+    \item $\frac{67}{120}$  
+    \item $\frac{53}{120}$  
+    \item $\frac{9}{19}$  
+    \item $\frac{3}{19}$  
+  \end{choices}
+\end{question}
+
+% 39.
+\begin{question}
+  设 $A, B$ 为互不相容的随机事件，且  
+  $P(A) = 0.2, P(B) = 0.6$，则 $P(A \cup \overline{B})$ 等于 \paren[B]
+  \begin{choices}
+    \item $0.8$  
+    \item $0.4$  
+    \item $0.48$  
+    \item $0.6$  
+  \end{choices}
+\end{question}
+
+% 40.
+\begin{question}
+  设事件 $A, B$ 同时发生时，事件 $C$ 一定发生，则 \paren[B]
+  \begin{choices}
+    \item $P(C) < P(A) + P(B) - 1$  
+    \item $P(C) \geq P(A) + P(B) - 1$  
+    \item $P(C) < P(AB)$  
+    \item $P(C) < P(A \cup B)$  
+  \end{choices}
+\end{question}
+
+% 41
+\begin{question}
+  设 $A, B$ 为两随机事件，且 $B \subset A$，则下列式子正确的 \paren[A]
+  \begin{choices}
+    \item $P(A \cup B) = P(A)$  
+    \item $P(AB) = P(A)$  
+    \item $P(B \mid A) = P(B)$  
+    \item $P(B - A) = P(B) - P(A)$  
+  \end{choices}
+\end{question}
+
+% 42.
+\begin{question}
+  在一批产品中任取 $3$ 个，事件 $A_i$ 表示“第 $i$ 个为次品”，$i=1,2,3$，那么事件“至多有一个正品”表示为 \paren[B]
+  \begin{choices}
+    \item $\overline{A_1} \cup \overline{A_2} \cup \overline{A_3}$  
+    \item $A_1 A_2 \cup A_2 A_3 \cup A_1 A_3$  
+    \item $A_1 \cup A_2 \cup A_3$  
+    \item $\overline{A_1 A_2 A_3}$  
+  \end{choices}
+\end{question}
+
+% 43.
+\begin{question}
+  在区间 $(0,1)$ 中随机地取两个数，则事件“两数之和小于 $\frac{6}{5}$”的概率为 \paren[A]
+  \begin{choices}
+    \item $\frac{17}{25}$  
+    \item $\frac{8}{25}$  
+    \item $\frac{1}{5}$  
+    \item $\frac{4}{5}$  
+  \end{choices}
+\end{question}
+
+% 44.
+\begin{question}
+  设 $A$ 表示事件“甲种产品畅销，乙种产品滞销”，则其对立事件 $\overline{A}$ 为 \paren[A]
+  \begin{choices}
+    \item “甲种产品滞销或乙种产品畅销”  
+    \item “甲种产品滞销”  
+    \item “甲、乙种产品均畅销”  
+    \item “甲种产品滞销，乙种产品畅销”  
+  \end{choices}
+\end{question}
+
+% 45.
+\begin{question}
+  生产某产品直到有 $10$ 件正品为止，记录生产产品的总件数，则该随机试验的样本空间是 \paren[C]
+  \begin{choices}
+    \item $\{1,2,\dots,10\}$  
+    \item $\{11,12,13,\dots\}$  
+    \item $\{10,11,12,\dots\}$  
+    \item $\{10,11,\dots,20\}$  
+  \end{choices}
+\end{question}
+
+% 46.
+\begin{question}
+  设 $A, B$ 互为对立事件，且 $P(A) > 0$，$P(B) > 0$，则下列各式中错误的是 \paren[B]
+  \begin{choices}
+    \item $P(A) = 1 - P(B)$  
+    \item $P(AB) = P(A)P(B)$  
+    \item $P(\overline{AB}) = 1$  
+    \item $P(A \cup B) = 1$  
+  \end{choices}
+\end{question}
+
+% 47.
+\begin{question}
+  设 $A, B$ 为随机事件，且 $C \subset B$，则 $\overline{(A-B)-C}$ 等于 \paren[D]
+  \begin{choices}
+    \item $\bar{A} \bar{C}$   
+    \item $\overline{A} \cup \overline{C}$  
+    \item $\overline{A} B$  
+    \item $\overline{A} \cup B$  
+  \end{choices}
+\end{question}
+
+% 48.
+\begin{question}
+  从一批产品中，每次取出一个（取后不放回），抽取三次，用 $A_i, i=1,2,3$ 表示“第 $i$ 次取到的是正品”，下列结论中不正确的是 \paren[B]
+  \begin{choices}
+    \item $\overline{A_1} A_2 A_3 \cup A_1 \overline{A_2} A_3 \cup A_1 A_2 \overline{A_3} \cup A_1 A_2 A_3$ 表示“至少抽到 $2$ 个正品”  
+    \item $A_2 A_3 \cup A_1 A_3 \cup A_1 A_2$ 表示“至少有 $1$ 个是次品”
+    \item $\overline{A_1A_2A_3}$ 表示“至少有 $1$ 个不是正品”
+    \item $A_1 \cup A_2 \cup A_3$ 表示“至少有 $1$ 个是正品”
+  \end{choices}
+\end{question}
+
+\section{随机变量及其分布}
+
+% 49.
+\begin{question}
+  已知随机变量 $X$ 的密度函数  
+  $$f(x) = 
+  \begin{cases} 
+  Ae^{-x}, & x > \lambda \\ 
+  0, & x \leq \lambda 
+  \end{cases}$$  
+  ($\lambda > 0$, $A$ 为常数)，则概率  
+  $P\{\lambda < X < \lambda + a\} \quad (a > 0)$  
+  的值 \paren[C]
+  \begin{choices}
+    \item 与 $a$ 无关，随 $\lambda$ 的增大而增大；  
+    \item 与 $a$ 无关，随 $\lambda$ 的增大而减小；  
+    \item 与 $\lambda$ 无关，随 $a$ 的增大而增大；  
+    \item 与 $\lambda$ 无关，随 $a$ 的增大而减小。  
+  \end{choices}
+\end{question}
+
+% 50.
+\begin{question}
+  设随机变量 $X$ 的分布函数为 $F(x)$，下列结论中不一定成立的是 \paren[D]
+  \begin{choices}
+    \item $F(+\infty) = 1$  
+    \item $F(-\infty) = 0$  
+    \item $0 \leq F(x) \leq 1$  
+    \item $F(x)$ 为连续函数。  
+  \end{choices}
+\end{question}
+
+% 51.
+\begin{question}
+  设 $Y = aX + b, \, a \neq 0$ 为随机变量 $X$ 的任一线性函数，则下面命题不成立的是 \paren[B]
+  \begin{choices}
+    \item 如果 $X$ 是连续型随机变量，则 $Y$ 也是连续型随机变量；  
+    \item 如果 $X$ 是泊松分布，则 $Y$ 也是泊松分布；  
+    \item 如果 $X$ 是均匀分布，则 $Y$ 也是均匀分布；  
+    \item 如果 $X$ 是正态分布，则 $Y$ 也是正态分布。  
+  \end{choices}
+\end{question}
+
+% 52.
+\begin{question}
+  如果随机变量 $X$ 的可能值充满区间（\quad ），而在此区间外等于 $0$，那么 $\sin x$ 可以成为一个随机变量的概率密度 \paren[A]
+  \begin{choices}
+    \item $[0, 0.5\pi]$  
+    \item $[-0.5\pi, 0]$  
+    \item $[0, \pi]$  
+    \item $[\pi, 1.5\pi]$  
+  \end{choices}
+\end{question}
+
+% 53.
+\begin{question}
+  设离散型随机变量的分布律如下  
+  \begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    $X$ & $-1$ & $0$ & $1$ & $2$ \\
+    \hline
+    $P$ & $0.1$ & $0.2$ & $0.3$ & $0.4$ \\
+    \hline
+    \end{tabular}
+  \end{table}
+
+  若其分布函数为 $F(x)$，则 $F(3/2)$ 等于 \paren[C]
+  \begin{choices}
+    \item $0.1$  
+    \item $0.3$  
+    \item $0.6$  
+    \item $1$  
+  \end{choices}
+\end{question}
+
+% 54.
+\begin{question}
+  设 $X \sim* B(n, p)$，若 $(n+1)p$ 不是整数，则 $k$ 取（\quad ）时 $P(X = k)$ 最大 \paren[D]
+  \begin{choices}
+    \item $[(n+1)p] + 1$  
+    \item $[(n+1)p] - 1$  
+    \item $[np]$  
+    \item $[(n+1)p]$  
+  \end{choices}
+\end{question}
+
+% 55.
+\begin{question}
+  若随机变量 $X$ 的分布律为
+  $$
+  \left(\begin{matrix}
+  -2 & -1 & 0 & 1 & 3 \\
+  \frac{1}{5} & \frac{1}{6} & \frac{1}{5} & \frac{1}{15} & \frac{11}{30}
+  \end{matrix} \right),
+  $$ 
+  则 $P(X > 0|X \geq 0)$ 等于 \paren[C]
+  \begin{choices}
+    \item $\frac{1}{5}$  
+    \item $\frac{13}{30}$  
+    \item $\frac{13}{19}$  
+    \item $\frac{19}{30}$  
+  \end{choices}
+\end{question}
+
+% 56.
+\begin{question}
+  抛一枚均匀硬币 $n, n \geq 1$ 次，以 $X$ 表示正面出现的次数，则事件“至少出现一次正面”可表示为 \paren[B]
+  \begin{choices}
+    \item $\{X=1\}$  
+    \item $\{X\geq 1\}$  
+    \item $\{X>1\}$  
+    \item $\{X<1\}$  
+  \end{choices}
+\end{question}
+
+% 57.
+\begin{question}
+  设 $F(x)$ 是连续型随机变量 $x$ 的分布函数，则下列选项正确的是 \paren[A]
+  \begin{choices}
+    \item $F(x) \sim* U(0,1)$  
+    \item $F(Y) \sim* U(0,1)$，其中 $Y$ 为任意连续型随机变量  
+    \item $F(X) \sim* N(0,1)$  
+    \item $F(Y) \sim* N(0,1)$，其中 $Y$ 为任意连续型随机变量  
+  \end{choices}
+\end{question}
+
+% 58.
+\begin{question}
+  设随机变量 $X$ 的概率密度为  
+  $f(x) = \frac{1}{2} e^{-|x|}, x \in \mathbb{R}$  
+  ，则其分布函数 $F(x)$ 为 \paren[C]
+  \begin{choices}
+    \item 
+    $F(x) =
+    \begin{cases} 
+    \frac{1}{2} e^x, & x < 0 \\
+    1, & x \geq 0 
+    \end{cases}$
+    
+    \item 
+    $F(x) =
+    \begin{cases} 
+    1 - \frac{1}{2} e^{-x}, & x < 0 \\
+    1, & x \geq 0 
+    \end{cases}$
+    
+    \item 
+    $F(x) =
+    \begin{cases} 
+    \frac{1}{2} e^x, & x < 0 \\
+    1 - \frac{1}{2} e^{-x}, & x \geq 0 
+    \end{cases}$
+    
+    \item 
+    $F(x) =
+    \begin{cases} 
+    \frac{1}{2} e^x, & x < 0 \\
+    1 - \frac{1}{2} e^{-x}, & 0 \leq x < 1 \\
+    1, & x \geq 1 
+    \end{cases}$
+  \end{choices}
+\end{question}
+
+% 59.
+\begin{question}
+  假设随机变量 $X$ 的分布函数为 $F(x)$，密度函数为 $f(x)$。若 $X$ 与 $-X$ 有相同的分布函数，则下列各式中不正确的是 \paren[A]
+  \begin{choices}
+    \item $F(x) = F(-x)$  
+    \item $F(x) = 1 - F(-x)$  
+    \item $f(x) = f(-x)$  
+    \item $P\{ |X| \leq x\} = 2F(x) - 1$  
+  \end{choices}
+\end{question}
+
+% 60.
+\begin{question}
+  随机变量 $X$ 的概率密度函数为  
+  $$f(x) = 
+  \begin{cases} 
+  3x^2, & 0 < x < 1 \\ 
+  0, & \text{其他} 
+  \end{cases},$$  
+  则 $Y = e^{X}$ 的概率密度函数为 \paren[A]
+  \begin{choices}
+    \item $f_Y(y) = 3y^{-1} \ln^2 y, \, 1 < y < e$  
+    \item $f_Y(y) = 3\ln^2 y, \, 1 < y < e$  
+    \item $f_Y(y) = 3e^{-3y}, \, y > 0$  
+    \item $f_Y(y) = 3e^{3y}, \, y < 0$  
+  \end{choices}
+\end{question}
+
+% 61.
+\begin{question}
+  设 $X \sim* N(0,1)$，则 $Y = X^2$ 的概率密度函数为 \paren[D]
+  \begin{choices}
+    \item $f_Y(y) = \frac{1}{\sqrt{2\pi}} e^{-\frac{y}{2}}, \, y > 0$  
+    \item $f_Y(y) = \frac{1}{2\sqrt{2\pi}} e^{-\frac{y}{2}} y^{-\frac{1}{2}}, \, y > 0$  
+    \item $f_Y(y) = \frac{1}{2\sqrt{2\pi}} e^{-\frac{y}{2}}, \, y > 0$  
+    \item $f_Y(y) = \frac{1}{\sqrt{2\pi}} e^{-\frac{y}{2}} y^{-\frac{1}{2}}, \, y > 0$  
+  \end{choices}
+\end{question}
+
+% 62.
+\begin{question}
+  下列函数中可作为概率密度函数的是 \paren[A]
+  \begin{choices}
+    \item 
+    $
+    \begin{cases}  
+    e^{-(x-a)}, & x > a \\  
+    0, & \text{其他}  
+    \end{cases}
+    $  
+    
+    \item 
+    $
+    \begin{cases}  
+    \sin x, & x \in (0, \pi) \\  
+    0, & \text{其他}  
+    \end{cases}
+    $  
+    
+    \item 
+    $
+    \begin{cases}  
+    \frac{1}{1+x^2}, & x > 0 \\  
+    0, & \text{其他}  
+    \end{cases}
+    $  
+    
+    \item 
+    $
+    \begin{cases}  
+    x^3, & -1 < x < 1 \\  
+    0, & \text{其他}  
+    \end{cases}
+    $  
+  \end{choices}
+\end{question}
+
+% 63.
+\begin{question}
+  设离散型随机变量 $X$ 的分布律为  
+  $P\{X = k\} = b \lambda^k, \, k = 1, 2, \cdots \text{且} \, b > 0,$  
+  则 $\lambda$ 的值为 \paren[B]
+  \begin{choices}
+    \item $b + 1$  
+    \item $\frac{1}{b + 1}$  
+    \item $\frac{1}{b - 1}$  
+    \item 任意正整数  
+  \end{choices}
+\end{question}
+
+% 64.
+\begin{question}
+  设随机变量 $X$ 的概率密度为 $f(x)$，且 $P\{X \geq 0\} = 1$，则必有 \paren[C]
+  \begin{choices}
+    \item $f(x)$ 在 $(0, +\infty)$ 内大于零
+    \item $f(x)$ 在 $(-\infty, 0)$ 内小于零
+    \item $\int_{0}^{+\infty} f(x) dx = 1$  
+    \item $f(x)$ 在 $(0, +\infty)$ 上单调增加
+  \end{choices}
+\end{question}
+
+% 65.
+\begin{question}
+  设连续型随机变量 $X$ 的概率密度函数为 $f(x)$，分布函数为 $F(x)$，则下列选项正确的是 \paren[C]
+  \begin{choices}
+    \item $0 \leq f(x) \leq 1$
+    \item $P(X = x) = F(x)$  
+    \item $P(X = x) \leq F(x)$  
+    \item $P(X = x) = f(x)$  
+  \end{choices}
+\end{question}
+
+% 66.
+\begin{question}
+  设随机变量 $X$ 服从区间 $(0,2)$ 上均匀分布，则随机变量 $Y = X^2$ 的概率密度函数 $f_Y(y)$ 等于 \paren[A]
+  \begin{choices}
+    \item 
+    $
+    \begin{cases} 
+    \frac{1}{4\sqrt{y}}, & 0 < y < 4 \\ 
+    0, & \text{其他} 
+    \end{cases}
+    $
+    
+    \item 
+    $
+    \begin{cases} 
+    \frac{1}{2\sqrt{y}}, & 0 < y < 4 \\ 
+    0, & \text{其他} 
+    \end{cases}
+    $
+    
+    \item 
+    $
+    \begin{cases} 
+    \frac{1}{4}, & 0 < y < 4 \\ 
+    0, & \text{其他} 
+    \end{cases}
+    $
+    
+    \item 
+    $
+    \begin{cases} 
+    \frac{1}{2}, & 0 < y < 2 \\ 
+    0, & \text{其他} 
+    \end{cases}
+    $
+  \end{choices}
+\end{question}
+
+% 67.
+\begin{question}
+  设 $F(x)$ 和 $f(x)$ 分别为某连续型随机变量的分布函数和概率密度函数，则必有 \paren[C]
+  \begin{choices}
+    \item $f(x)$ 单调不减  
+    \item $\int_{-\infty}^{+\infty} F(x) dx = 1$  
+    \item $F(-\infty) = 0$  
+    \item $F(x) = \int_{-\infty}^{+\infty} f(x) dx$  
+  \end{choices}
+\end{question}
+
+% 68.
+\begin{question}
+  设随机变量 $X$ 的概率密度为  
+  $f(x) = \frac{1}{2\sqrt{2\pi}} e^{-\frac{(x+1)^2}{8}}$  
+  ，则 $X$ 服从（\quad ）分布 \paren[B]
+  \begin{choices}
+    \item $N(-1, 2)$  
+    \item $N(-1, 4)$  
+    \item $N(-1, 8)$  
+    \item $N(-1, 16)$  
+  \end{choices}
+\end{question}
+
+% 69.
+\begin{question}
+  设随机变量 $X$ 的概率密度为  
+  $$f(x) = 
+  \begin{cases} 
+  a(4x - 2x^2), & 1 < x < 2 \\ 
+  0, & \text{其他} 
+  \end{cases},$$  
+  则 $a$ 等于 \paren[C]
+  \begin{choices}
+    \item $\frac{5}{16}$  
+    \item $\frac{1}{2}$  
+    \item $\frac{3}{4}$  
+    \item $\frac{4}{5}$  
+  \end{choices}
+\end{question}
+
+% 70.
+\begin{question}
+  一大楼装有 $5$ 个同类型的供水设备，调查表明在任意一个时刻每个设备使用的概率为 $0.1$，问在同一个时刻 $2$ 个设备被使用的概率是 \paren[D]
+  \begin{choices}
+    \item $C_5^2 \times 0.1^2 \times 0.9^2$  
+    \item $0.1^2 \times 0.9^2$  
+    \item $C_5^3 \times 0.1^3 \times 0.9^2$  
+    \item $C_5^2 \times 0.1^2 \times 0.9^3$  
+  \end{choices}
+\end{question}
+
+% 71.
+\begin{question}
+  已知随机变量 $X$ 的分布律为：  
+  $P\{X = k\} = \frac{2^k C}{k!}, k = 0,1,2,\cdots,$  
+  则常数 $C$ 等于 \paren[B]
+  \begin{choices}
+    \item $e^{-1}$  
+    \item $e^{-2}$  
+    \item $e^{-3}$  
+    \item $e^{-4}$  
+  \end{choices}
+\end{question}
+
+% 72.
+\begin{question}
+  如果随机变量 $X$ 服从区间 $[0,1]$ 上的均匀分布，令 $Y = 2X + 1$，则 \paren[C]
+  \begin{choices}
+    \item $Y$ 服从区间 $[0,1]$ 上的均匀分布。  
+    \item $P(0 \leq Y \leq 1) = 1$  
+    \item $Y$ 服从区间 $[1,3]$ 上的均匀分布  
+    \item $P(0 \leq Y \leq 2) = 1$。  
+  \end{choices}
+\end{question}
+
+% 73.
+\begin{question}
+  设 $X$ 服从参数为 $1$ 的指数分布，则  
+  $Y = \min(X, 2)$ 的分布函数 $F_Y(y)$ 等于 \paren[B]
+  \begin{choices}
+    \item 
+    $
+    \begin{cases} 
+    1 - e^{-y}, & y > 0 \\ 
+    0, & \text{其他} 
+    \end{cases}
+    $
+    
+    \item 
+    $
+    \begin{cases} 
+    0, & y \leq 0 \\ 
+    1 - e^{-y}, & 0 < y < 2 \\ 
+    1, & y \geq 2 
+    \end{cases}
+    $
+    
+    \item 
+    $
+    \begin{cases} 
+    1 - e^{-2y}, & y > 0 \\ 
+    0, & \text{其他} 
+    \end{cases}
+    $
+    
+    \item 
+    $
+    \begin{cases} 
+    \frac{1}{2}, & 0 < y < 2 \\ 
+    0, & \text{其他} 
+    \end{cases}
+    $
+  \end{choices}
+\end{question}
+
+% 74.
+\begin{question}
+  设随机变量 $X$ 服从标准正态分布，则 $Y = |X|$ 的概率密度函数为 \paren[B]
+  \begin{choices}
+    \item 
+    $
+    \begin{cases} 
+    \frac{1}{\sqrt{2\pi}} e^{-\frac{y^2}{2}}, & y \geq 0 \\ 
+    0, & \text{其他} 
+    \end{cases}
+    $
+    
+    \item 
+    $
+    \begin{cases} 
+    \frac{2}{\sqrt{2\pi}} e^{-\frac{y^2}{2}}, & y \geq 0 \\ 
+    0, & \text{其他} 
+    \end{cases}
+    $
+    
+    \item 
+    $
+    \begin{cases} 
+    \frac{1}{2\sqrt{2\pi}} e^{-\frac{y^2}{2}}, & y \geq 0 \\ 
+    0, & \text{其他} 
+    \end{cases}
+    $
+    
+    \item 
+    $
+    \begin{cases} 
+    \frac{1}{2\sqrt{\pi}} e^{-\frac{y^2}{2}}, & y \geq 0 \\ 
+    0, & \text{其他} 
+    \end{cases}
+    $
+  \end{choices}
+\end{question}
+
+% 75.
+\begin{question}
+  设 $X$ 的分布函数为  
+  $$F(x) = 
+  \begin{cases} 
+  0, & x < 0 \\ 
+  \frac{1}{3}, & 0 \leq x < 1 \\ 
+  \frac{1}{2}, & 1 \leq x < 2 \\ 
+  1, & x \geq 2 
+  \end{cases},$$  
+  则  
+  $P(1 < X \leq 4) = $ \paren[A]
+  \begin{choices}
+    \item $\frac{1}{2}$  
+    \item $\frac{1}{3}$  
+    \item $0$  
+    \item $1$  
+  \end{choices}
+\end{question}
+
+% 76.
+\begin{question}
+  下列说法错误的是 \paren[D]
+  \begin{choices}
+    \item 不同随机变量的分布函数可能相同  
+    \item 除掉一个零概率集合，连续型随机变量的密度函数是唯一的  
+    \item 连续型随机变量的密度函数不一定连续  
+    \item 非离散型随机变量一定是连续型随机变量  
+  \end{choices}
+\end{question}
+
+% 77.
+\begin{question}
+  设随机变量 $X$ 的分布律为  
+  $P\{X = k\} = \frac{1}{2^k}, k = 1, 2, \cdots ,$  
+  则  
+  $Y = \sin\left(\frac{\pi X}{2}\right)$  
+  的分布律为 \paren[A]
+  \begin{choices}
+    \item 
+    $
+    \begin{pmatrix}
+    Y & -1 & 0 & 1 \\
+    P & \frac{2}{15} & \frac{1}{3} & \frac{8}{15}
+    \end{pmatrix}
+    $
+    
+    \item 
+    $
+    \begin{pmatrix}
+    Y & -1 & 0 & 1 \\
+    P & \frac{1}{3} & \frac{1}{3} & \frac{1}{3}
+    \end{pmatrix}
+    $
+    
+    \item 
+    $
+    \begin{pmatrix}
+    Y & -1 & 0 & 1 \\
+    P & \frac{2}{15} & \frac{6}{15} & \frac{7}{15}
+    \end{pmatrix}
+    $
+    
+    \item 
+    $
+    \begin{pmatrix}
+    Y & -1 & 0 & 1 \\
+    P & \frac{2}{15} & \frac{6}{15} & \frac{7}{15}
+    \end{pmatrix}
+    $
+  \end{choices}
+\end{question}
+
+% 78.
+\begin{question}
+  已知随机变量 $X$ 的概率密度为 $f_X(x)$，令 $Y = -2X$，则 $Y$ 的概率密度 $f_Y(y)$ 为 \paren[D]
+  \begin{choices}
+    \item $2f_X(-2y)$  
+    \item $f_X(-\frac{y}{2})$  
+    \item $-\frac{1}{2}f_X(-\frac{y}{2})$  
+    \item $\frac{1}{2}f_X(-\frac{y}{2})$  
+  \end{choices}
+\end{question}
+
+% 79.
+\begin{question}
+  若随机变量 $X$ 的分布函数是  
+  $$F(x) = 
+  \begin{cases} 
+  0, & x < 1 \\ 
+  \frac{1}{6}, & 1 \leq x < 2 \\ 
+  \frac{1}{2}, & 2 \leq x < 3 \\ 
+  1, & 3 \leq x 
+  \end{cases},$$  
+  分布律为  
+  $
+  \begin{pmatrix}
+  X & 1 & 2 & 3 \\
+  P & a & b & c
+  \end{pmatrix}$  
+  则 $a, b, c$ 分别为 \paren[A]
+  \begin{choices}
+    \item $\frac{1}{6}, \frac{1}{3}, \frac{1}{2}$  
+    \item $\frac{1}{6}, \frac{1}{2}, 1$  
+    \item $0, \frac{1}{6}, \frac{1}{2}$  
+    \item $\frac{1}{6}, \frac{1}{2}, \frac{1}{2}$  
+  \end{choices}
+\end{question}
+
+% 80.
+\begin{question}
+  下列各函数可作为随机变量分布函数的是 \paren[B]
+  \begin{choices}
+    \item 
+    $F_1(x) = 
+    \begin{cases} 
+    2x, & 0 \leq x \leq 1 \\
+    0, & \text{其他}
+    \end{cases}$
+    
+    \item 
+    $F_2(x) =
+    \begin{cases} 
+    0, & x < 0 \\
+    x, & 0 \leq x < 1 \\
+    1, & x \geq 1
+    \end{cases}$
+    
+    \item 
+    $F_3(x) =
+    \begin{cases} 
+    -1, & x < -1 \\
+    x, & -1 \leq x < 1 \\
+    1, & x \geq 1
+    \end{cases}$
+    
+    \item 
+    $F_4(x) =
+    \begin{cases} 
+    0, & x < 0 \\
+    2x, & 0 \leq x < 1 \\
+    2, & x \geq 1
+    \end{cases}$
+  \end{choices}
+\end{question}
+
+% 81.
+\begin{question}
+  设连续随机变量 $X$ 的概率密度为  
+  $$f(x) = 
+  \begin{cases} 
+  \frac{x}{2}, & 0 < x < 2 \\ 
+  0, & \text{其他} 
+  \end{cases},$$ $P\{|X|\leq 1\}$ 等于 \paren[B]
+  \begin{choices}
+    \item $0$  
+    \item $0.25$  
+    \item $0.5$  
+    \item $1$  
+  \end{choices}
+\end{question}
+
+% 82.
+\begin{question}
+  设随机变量 $X$ 的概率密度为 $f(x)$，则 $f(x)$ 一定满足 \paren[C]
+  \begin{choices}
+    \item $0 \leq f(x) \leq 1$  
+    \item $P\{X > x\} = \int_{-\infty}^{x} f(x) dx$  
+    \item $\int_{-\infty}^{+\infty} f(x) dx = 1$  
+    \item $f(+\infty) = 1$  
+  \end{choices}
+\end{question}
+
+% 83.
+\begin{question}
+  设随机变量 $X \sim* b(4, p)$，若 $P\{X \geq 1\} = \frac{80}{81}$，则  
+  $p = $ \paren[B]
+  \begin{choices}
+    \item $\frac{1}{3}$  
+    \item $\frac{2}{3}$  
+    \item $\frac{1}{9}$  
+    \item $\frac{8}{9}$  
+  \end{choices}
+\end{question}
+
+% 84.
+\begin{question}
+  常数 $b = ( \quad )$ 时，  
+  $ p_k = \frac{b}{k(1+k)}, k=1,2,3,\ldots $  
+  为离散型随机变量 \paren[B]
+  \begin{choices}
+    \item $2$  
+    \item $1$  
+    \item $0.5$  
+    \item $3$  
+  \end{choices}
+\end{question}
+
+% 85.
+\begin{question}
+  若随机变量 $X$ 的分布律为  
+  $$
+  \begin{pmatrix}
+  -2 & -1 & 0 & 1 & 3 \\
+  \frac{1}{5} & \frac{1}{6} & \frac{1}{5} & \frac{1}{15} & \frac{11}{30}
+  \end{pmatrix},
+  $$  
+  则 $P(X > 0)$ 等于 \paren[B]
+  \begin{choices}
+    \item $\frac{11}{30}$  
+    \item $\frac{13}{30}$  
+    \item $\frac{17}{30}$  
+    \item $\frac{19}{30}$  
+  \end{choices}
+\end{question}
+
+% 86.
+\begin{question}
+  某人独立射击目标 $3$ 次，每次命中率为 $0.8$，则 $3$ 次中至多击中一次的概率为 \paren[D]
+  \begin{choices}
+    \item $0.996$  
+    \item $0.008$  
+    \item $0.096$  
+    \item $0.104$  
+  \end{choices}
+\end{question}
+
+% 87.
+\begin{question}
+  随机变量 $X$ 服从参数 $\lambda = 2$ 的泊松分布，则 \paren[B]
+  \begin{choices}
+    \item $X$ 取整数值  
+    \item $P\{X = 0\} = e^{-2}$  
+    \item $P\{X = 0\} = P\{X = 1\}$  
+    \item $P\{X \leq 1\} = 2e^{-2}$  
+  \end{choices}
+\end{question}
+
+% 88.
+\begin{question}
+  某人连续向一目标射击，每次命中目标的概率为 $\frac{3}{4}$，他连续射击直到命中为止，则射击次数为 $3$ 的概率是 \paren[C]
+  \begin{choices}
+    \item $(\frac{3}{4})^3$  
+    \item $(\frac{3}{4})^2 \times \frac{1}{4}$  
+    \item $(\frac{1}{4})^2 \times \frac{3}{4}$  
+    \item $C_4^2 (\frac{1}{4})^2 \frac{3}{4}$  
+  \end{choices}
+\end{question}
+
+% 89.
+\begin{question}
+  设随机变量 $X$ 的概率密度函数为 $f(x)$，且  
+  $f(-x) = f(x)$，$F(x)$ 是 $X$ 的分布函数，则对任意实数 $a$，有 \paren[B]
+  \begin{choices}
+    \item $F(-a) = 1 - \int_{0}^{a} f(t) dt$  
+    \item $F(-a) = \frac{1}{2} - \int_{0}^{a} f(t) dt$  
+    \item $F(-a) = F(a)$  
+    \item $F(-a) = 2F(a) - 1$  
+  \end{choices}
+\end{question}
+
+% 90.
+\begin{question}
+  设连续型随机变量 $X$ 的分布函数为  
+  $$F(x) = 
+  \begin{cases} 
+  0, & x < -a \\ 
+  A + B \arcsin \frac{x}{a}, & -a \leq x \leq a, \\
+  1, & x \geq a 
+  \end{cases}$$  
+  其中 $a$ 为任意非 $0$ 常数，则 $A, B$ 分别为 \paren[A]
+  \begin{choices}
+    \item $\frac{1}{2}$, $\frac{1}{\pi}$  
+    \item $\frac{1}{2}$, $\frac{2}{\pi}$  
+    \item $\frac{1}{2}$, $-\frac{1}{\pi}$  
+    \item $\frac{1}{2}$, $\frac{a}{\pi}$  
+  \end{choices}
+\end{question}
+
+% 91.
+\begin{question}
+  设 $X \sim* N(\mu, 4^2)$, $Y \sim* N(\mu, 5^2)$, 记  
+  $P_1 = P(X \leq \mu - 4), \, P_2 = P(Y \geq \mu + 5)$,则 
+  \paren[A]
+  \begin{choices}
+    \item 对任意 $\mu$ 都有 $P_1 = P_2$  
+    \item 对任意实数 $\mu$, 都有 $P_1 < P_2$  
+    \item 只有 $\mu$ 的个别值, 才有 $P_1 = P_2$  
+    \item 对任意实数 $\mu$, 都有 $P_1 > P_2$  
+  \end{choices}
+\end{question}
+
+% 92.
+\begin{question}
+  一房间有 $3$ 扇同样大小的窗子，其中只有一扇是打开的。有一只鸟从开着的窗子飞入房间，它只能从开着的窗子飞出去。鸟在房子里飞来飞去，试图飞出房间。假定鸟是没有记忆的，鸟儿飞向各扇窗子是随机的。以 $X$ 表示鸟为了飞出房间试飞的次数，则 $X$ 服从的分布为 \paren[B]
+  \begin{choices}
+    \item $0-1$ 分布  
+    \item 几何分布  
+    \item 二项分布  
+    \item 泊松分布  
+  \end{choices}
+\end{question}
+
+% 93.
+\begin{question}
+  已知离散型随机变量 $X$ 的可能取值为 $-2,0,2,\sqrt{5}$，相应的概率依次为 $\frac{1}{a}, \frac{3}{2a}, \frac{5}{4a}, \frac{3}{4a}$，求 $P\{|X|\leq 2\mid X\geq 0\} = $ \paren[A]
+  \begin{choices}
+    \item $\frac{11}{14}$  
+    \item $\frac{7}{9}$  
+    \item $\frac{11}{18}$  
+    \item $\frac{1}{3}$  
+  \end{choices}
+\end{question}
+
+% 94.
+\begin{question}
+  设一批产品共有 $1000$ 个，其中有 $50$ 个次品。从中随机地有放回地抽取 $500$ 个产品，$X$ 表示抽到次品的个数，则 $P\{X = 3\}$ 等于 \paren[C]
+  \begin{choices}
+    \item $\frac{C^3_{50} C^{497}_{950}}{A^{500}_{1000}}$  
+    \item $\frac{A^3_{50} A^{497}_{950}}{A^{500}_{1000}}$  
+    \item $C^3_{500}(0.05)^3 (0.95)^{497}$  
+    \item $\frac{3}{500}$  
+  \end{choices}
+\end{question}
+
+% 95.
+\begin{question}
+  设随机变量 $X$ 的分布律为  
+  $
+  \begin{pmatrix} 
+  X & -1 & 2 & 5 \\ 
+  P & 0.2 & 0.35 & 0.45 
+  \end{pmatrix},$
+  则  
+  $P\{(-2 < X \leq 4) - (X \geq 2)\}$ 等于 \paren[B]
+  \begin{choices}
+    \item $0$  
+    \item $0.2$  
+    \item $0.35$  
+    \item $0.55$  
+  \end{choices}
+\end{question}
+
+% 96.
+\begin{question}
+  一报童卖报，每份 $0.15$ 元，其成本为 $0.10$ 元。报馆每天给报童 $1000$ 份报，并规定他不得把卖不出的报纸退回。设 $X$ 为报童每天卖出的报纸份数，则报童赔钱这一事件用随机变量可表达为 \paren[A]
+  \begin{choices}
+    \item $[X \leq 666]$  
+    \item $[X \leq 600]$  
+    \item $[X \leq 500]$  
+    \item $[X \leq 550]$  
+  \end{choices}
+\end{question}
+
+% 97.
+\begin{question}
+  将一枚均匀硬币连掷两次，观察正、反面（正面记为 $H$，反面记为 $T$）出现的情况，定义随机变量 $X$，对应法则为  
+  $X(HH) = 0, X(HT) = 1, X(TH) = 2, X(TT) = 3,$ 
+  则事件 $\{X \leq 1\}$ 等于 \paren[B]
+  \begin{choices}
+    \item $\{0, 1\}$  
+    \item $\{\text{HH}, \text{HT}\}$  
+    \item $\{1\}$  
+    \item $\{\text{HT}\}$  
+  \end{choices}
+\end{question}
+
+% 98.
+\begin{question}
+  设 $X$ 是一随机变量，则 $X$ 的定义域是 \paren[C]
+  \begin{choices}
+    \item 正实数区域 $(0, +\infty)$  
+    \item 全体实数区域 $(-\infty, +\infty)$  
+    \item 样本空间 $S$  
+    \item 全体事件组成的集合  
+  \end{choices}
+\end{question}
+
+% 99.
+\begin{question}
+  设随机变量 $X$ 服从参数为 $\lambda$ 的泊松分布，设  
+  $P(X = 1 | X \leq 1) = 0.8,$
+  则 $\lambda$ 等于 \paren[C]
+  \begin{choices}
+    \item $0.8$  
+    \item $2$  
+    \item $4$  
+    \item $0.25$  
+  \end{choices}
+\end{question}
+
+\section{多维随机变量及其分布}
+
+% 100.
+\begin{question}
+  设二维随机变量 $(X, Y)$ 的概率密度为  
+  $$f(x, y) = 
+  \begin{cases} 
+  c, & -1 < x < 1, -1 < y < 1 \\ 
+  0, & \text{其他} 
+  \end{cases},$$ 则常数$c$
+  等于 \paren[A]
+  \begin{choices}
+    \item $\frac{1}{4}$  
+    \item $\frac{1}{2}$  
+    \item $2$  
+    \item $4$  
+  \end{choices}
+\end{question}
+
+% 101.
+\begin{question}
+  设二维随机向量 $(X, Y)$ 的联合分布律为  
+  \begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    \diagbox{$X$}{$Y$}   & 0   & 1   & 2   \\ \hline
+    -1 & 0.2 & 0   & 0.1 \\ \hline
+    0  & 0   & 0.4 & 0   \\ \hline
+    1  & 0.1 & 0   & 0.2 \\ \hline
+    \end{tabular}
+  \end{table}
+  
+  设其联合分布函数为 $F(x, y)$，则 $F(1, 1)$ 等于 \paren[D]
+  \begin{choices}
+    \item $0.2$  
+    \item $0.3$  
+    \item $0.6$  
+    \item $0.7$  
+  \end{choices}
+\end{question}
+
+% 102.
+\begin{question}
+  设 $F(x, y), f(x, y)$ 分别为二维连续型随机变量 $(X, Y)$ 的联合分布函数和概率密度函数，则下列选项不正确的是 \paren[D]
+  \begin{choices}
+    \item $\iint\limits_{R^2} f(x, y) dxdy = 1$  
+    \item $F(x, y) = \int_{-\infty}^x du \int_{-\infty}^y f(u, v) dv$  
+    \item $P((X, Y) \in D) = \iint\limits_D f(x, y) dxdy$  
+    \item $f(x, y)$ 是连续函数  
+  \end{choices}
+\end{question}
+
+% 103.
+\begin{question}
+  设二维随机变量 $(X, Y)$ 的分布函数为 $F(x, y)$，则下列选项不正确的是 \paren[D]
+  \begin{choices}
+    \item $F(-\infty, +\infty) = 0$  
+    \item $F(x, +\infty)$ 关于 $x$ 单调不减  
+    \item $P(X > x) = 1 - F(x, +\infty)$  
+    \item $P(X > 0, Y > 0) = 1 - F(0, 0)$  
+  \end{choices}
+\end{question}
+
+% 104.
+\begin{question}
+  设二维连续型随机向量 $(X, Y)$ 的概率密度为
+  $$f(x, y) = 
+  \begin{cases} 
+  6x^2y, & 0 \leq x \leq 1, 0 \leq y \leq 1 \\ 
+  0, & \text{其他} 
+  \end{cases},$$ 
+  则错误的是 \paren[C]
+  \begin{choices}
+    \item $P\{X \geq 0\} = 1$  
+    \item $P\{Y \leq 1\} = 1$  
+    \item $X, Y$ 不独立  
+    \item 随机点 $(X, Y)$ 落在区域 $D = \{(x, y) : 0 \leq x \leq 1, 0 \leq y \leq 1\}$ 的概率为 $1$  
+  \end{choices}
+\end{question}
+
+% 105.
+\begin{question}
+  向正方形区域 $\{(x, y): -1 < x < 1, -1 < y < 1\}$ 内随机投一点，则此点恰好落入单位圆 $\{(x, y): x^2 + y^2 \leq 1\}$ 内的概率为 \paren[C]
+  \begin{choices}
+    \item $\frac{\pi}{2}$  
+    \item $\frac{1}{2}$  
+    \item $\frac{\pi}{4}$  
+    \item $\frac{1}{4}$  
+  \end{choices}
+\end{question}
+
+% 106.
+\begin{question}
+  设 $X, Y$ 相互独立，且都在区间 $(0,1)$ 上服从均匀分布。则方程 $x^2 + Xx + Y = 0$ 有实根的概率为 \paren[D]
+  \begin{choices}
+    \item $\frac{1}{4}$  
+    \item $\frac{1}{3}$  
+    \item $\frac{1}{2}$  
+    \item $\frac{1}{12}$  
+  \end{choices}
+\end{question}
+
+% 107.
+\begin{question}
+  在 $[0, \pi]$ 上均匀地任取两个数 $\xi$ 和 $\eta$，则  
+  $P\{\cos(\xi + \eta) < 0\} = ( )$ \paren[A]
+  \begin{choices}
+    \item $\frac{3}{4}$  
+    \item $\frac{1}{2}$  
+    \item $\frac{2}{3}$  
+    \item $\frac{7}{8}$  
+  \end{choices}
+\end{question}
+
+% 108.
+\begin{question}
+  设二维随机变量 $(X, Y)$ 服从 $G$ 上的均匀分布，$G$ 的区域由曲线 $y = x^2$ 与 $y = x$ 围成，则 $(X, Y)$ 的联合概率密度函数为 \paren[A]
+  \begin{choices}
+    \item 
+    $f(x, y) =
+    \begin{cases} 
+    6, & (x, y) \in G \\
+    0, & \text{其他}
+    \end{cases}$
+    
+    \item 
+    $f(x, y) =
+    \begin{cases} 
+    \frac{1}{6}, & (x, y) \in G \\
+    0, & \text{其他}
+    \end{cases}$
+    
+    \item 
+    $f(x, y) =
+    \begin{cases} 
+    2, & (x, y) \in G \\
+    0, & \text{其他}
+    \end{cases}$
+    
+    \item 
+    $f(x, y) =
+    \begin{cases} 
+    \frac{1}{2}, & (x, y) \in G \\
+    0, & \text{其他}
+    \end{cases}$
+  \end{choices}
+\end{question}
+
+% 109.
+\begin{question}
+  设 $f_1(x)$ 为标准正态分布的概率密度，$f_2(x)$ 为 $[-1, 3]$ 上均匀分布的概率密度，若  
+  $f(x) = 
+  \begin{cases} 
+  af_1(x), & x \leq 0 \\ 
+  bf_2(x), & x > 0 
+  \end{cases} 
+  \quad (a > 0, b > 0) \text{ 为概率密度，}$  
+  则应满足 \paren[A]
+  \begin{choices}
+    \item $2a + 3b = 4$  
+    \item $3a + 2b = 4$  
+    \item $a + b = 1$  
+    \item $a + b = 2$  
+  \end{choices}
+\end{question}
+
+% 110.
+\begin{question}
+  设二维随机向量 $(X, Y)$ 的联合分布律为  
+
+  \begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    \diagbox{$X$}{$Y$}   & 0   & 1   & 2   \\ \hline
+    1 & $1/6$   & $1/4$   & $1/12$ \\ \hline
+    2 & $1/12$  & $c$ & $1/4$  \\ \hline
+    \end{tabular}
+  \end{table}
+
+  则 $c$ 等于 \paren[B]
+  \begin{choices}
+    \item $\frac{1}{12}$  
+    \item $\frac{1}{6}$  
+    \item $\frac{1}{4}$  
+    \item $\frac{1}{3}$  
+  \end{choices}
+\end{question}
+
+% 111.
+\begin{question}
+  设二维随机向量 $(X, Y)$ 的联合分布函数为 $F(x, y)$，则  
+  $F(-\infty, y)$ 等于 \paren[B]
+  \begin{choices}
+    \item $-\infty$  
+    \item $0$  
+    \item $1$  
+    \item $+\infty$  
+  \end{choices}
+\end{question}
+
+% 112.
+\begin{question}
+  设二维随机变量 $(X, Y)$ 的联合分布函数为 $F(x, y)$，则 $P(X > 2, Y > 3)$ 等于 \paren[D]
+  \begin{choices}
+    \item $F(2, 3)$  
+    \item $F(2, +\infty) - F(2, 3)$  
+    \item $1 - F(2, 3)$  
+    \item $1 - F(2, +\infty) - F(+ \infty, 3) + F(2, 3)$  
+  \end{choices}
+\end{question}
+
+% 113.
+\begin{question}
+  设二维随机变量 $(X, Y)$ 的联合概率密度函数为  
+  $$f(x, y) = 
+  \begin{cases} 
+  e^{-(x + y)}, & x > 0, y > 0 \\ 
+  0, & \text{其他} 
+  \end{cases}$$  
+  则 $P(X \geq Y)$ 等于 \paren[B]
+  \begin{choices}
+    \item $\frac{3}{4}$  
+    \item $\frac{1}{2}$  
+    \item $\frac{2}{3}$  
+    \item $\frac{1}{4}$  
+  \end{choices}
+\end{question}
+
+% 114.
+\begin{question}
+  设二维随机变量 $(X, Y)$ 的联合概率密度函数为  
+  $$f(x, y) = 
+  \begin{cases} 
+  6x, & 0 \leq x \leq y \leq 1 \\ 
+  0, & \text{其他} 
+  \end{cases}$$ 
+  则 $P(X + Y \leq 1)$ 等于 \paren[C]
+  \begin{choices}
+    \item $\frac{3}{4}$  
+    \item $\frac{1}{2}$  
+    \item $\frac{1}{4}$  
+    \item $\frac{1}{8}$  
+  \end{choices}
+\end{question}
+
+% 115.
+\begin{question}
+  设二维随机向量 $(X, Y)$ 的联合分布函数为 $F(x, y)$，则以下结论中错误的是 \paren[B]
+  \begin{choices}
+    \item $F(-\infty, +\infty) = 0$  
+    \item $F(+\infty, y) = 1$  
+    \item $F(-\infty, -\infty) = 0$  
+    \item $F(+\infty, +\infty) = 1$  
+  \end{choices}
+\end{question}
+
+% 116.
+\begin{question}
+  设二维随机变量 $(X, Y)$ 在由 $y = \frac{1}{x}, y = 0, x = 1$ 和 $x = e^2$ 所形成的区域 $D$ 上服从均匀分布，则 $(X, Y)$ 关于 $X$ 的边缘密度在 $x = 2$ 处的值为 \paren[A]
+  \begin{choices}
+    \item $\frac{1}{4}$  
+    \item $\frac{1}{2}$  
+    \item $\frac{1}{3}$  
+    \item $1$  
+  \end{choices}
+\end{question}
+
+% 117.
+\begin{question}
+  一般情况下，边缘分布与联合分布的关系是 \paren[B]
+  \begin{choices}
+    \item 边缘分布可以确定联合分布  
+    \item 联合分布可以确定边缘分布  
+    \item 二者可以相互确定  
+    \item 二者不能相互确定  
+  \end{choices}
+\end{question}
+
+% 118.
+\begin{question}
+  设二维连续型随机变量 $(X,Y)$ 的联合概率密度函数为  
+  $f(x,y)$，$f_X(x)$ 是 $X$ 的边缘概率密度函数，则  
+  $\int_{-\infty}^{+\infty} f_X(x) dx$ 等于 \paren[B]
+  \begin{choices}
+    \item $0$  
+    \item $1$  
+    \item $F_X(x)$  
+    \item 无法确定  
+  \end{choices}
+\end{question}
+
+% 119.
+\begin{question}
+  设二维随机变量 $(X, Y)$ 的联合分布函数为 $F(x, y)$，则关于 $X$ 的边缘分布函数为 $F_X(x)$ 等于 \paren[A]
+  \begin{choices}
+    \item $F(x, +\infty)$  
+    \item $F(x, -\infty)$  
+    \item $\frac{\partial F(x, y)}{\partial x}$  
+    \item 无法确定  
+  \end{choices}
+\end{question}
+
+% 120.
+\begin{question}
+  设二维随机向量 $(X, Y)$ 的联合分布律为  
+  
+  \begin{table}[h!]
+    \centering
+      \begin{tabular}{|c|c|c|c|}
+      \hline
+      \diagbox{$X$}{$Y$} & $0$ & $1$ & $2$ \\
+      \hline
+      $0$ & $1/12$ & $1/6$ & $1/6$ \\
+      \hline
+      $1$ & $1/12$ & $1/12$ & $0$ \\
+      \hline
+      $2$ & $1/6$ & $1/12$ & $1/6$ \\
+      \hline
+      \end{tabular}
+  \end{table}
+
+  则 $P(X=0)$ 等于 \paren[D]
+  \begin{choices}
+    \item $\frac{1}{12}$  
+    \item $\frac{1}{6}$  
+    \item $\frac{1}{3}$  
+    \item $\frac{5}{12}$  
+  \end{choices}
+\end{question}
+
+% 121.
+\begin{question}
+  设二维随机向量 $(X, Y)$ 的概率密度为 $f(x, y)$，两个边缘概率密度函数分别为 $f_X(x)$ 和 $f_Y(y)$，则以下结论正确的是 \paren[C]
+  \begin{choices}
+    \item $f(x, y) = f_X(x)f_Y(y)$  
+    \item $f(x, y) = f_X(x) + f_Y(y)$  
+    \item $\int_{-\infty}^{+\infty} f_X(x)dx = 1$  
+    \item $\int_{-\infty}^{+\infty} f(x, y)dx = 1$  
+  \end{choices}
+\end{question}
+
+% 122.
+\begin{question}
+  设二维连续型随机变量 $(X,Y)$ 的联合概率密度函数为  
+  $f(x,y)$，则 $(X,Y)$ 关于 $X$ 的边缘概率密度函数  
+  $f_X(x)$ 等于 \paren[B]
+  \begin{choices}
+    \item $\int_{-\infty}^{+\infty} f(x,y) \, dx$  
+    \item $\int_{-\infty}^{+\infty} f(x,y) \, dy$  
+    \item $f(x,+\infty)$  
+    \item $f(+\infty,y)$  
+  \end{choices}
+\end{question}
+
+% 123.
+\begin{question}
+  设二维随机向量 $(X, Y)$ 的联合分布律为  
+  \begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    \diagbox{$X$}{$Y$} & $1$ & $2$ & $3$ \\
+    \hline
+    $1$ & $\tfrac{1}{6}$ & $\tfrac{1}{9}$ & $\tfrac{1}{18}$ \\
+    \hline
+    $2$ & $\tfrac{1}{3}$ & $\alpha$ & $\beta$ \\
+    \hline
+    \end{tabular}
+  \end{table}
+
+  若 $X$ 与 $Y$ 相互独立，则 \paren[A]
+  \begin{choices}
+    \item $\alpha = \frac{2}{9}, \quad \beta = \frac{1}{9}$  
+    \item $\alpha = \frac{1}{9}, \quad \beta = \frac{2}{9}$  
+    \item $\alpha = \frac{1}{6}, \quad \beta = \frac{1}{6}$  
+    \item $\alpha = \frac{5}{18}, \quad \beta = \frac{1}{18}$  
+  \end{choices}
+\end{question}
+
+% 124.
+\begin{question}
+  设二维随机变量 $(X, Y)$ 的概率分布为  
+  \begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+    \diagbox{$X$}{$Y$} & $0$ & $1$ \\
+    \hline
+    $0$ & $0.4$ & $b$ \\
+    \hline
+    $1$ & $a$ & $0.1$ \\
+    \hline
+    \end{tabular}
+  \end{table}
+  已知随机事件 $\{X = 0\}$ 与 $\{X + Y = 1\}$ 相互独立，  
+  则有 \paren[B]
+  \begin{choices}
+    \item $a = 0.2, \, b = 0.3$  
+    \item $a = 0.4, \, b = 0.1$  
+    \item $a = 0.3, \, b = 0.2$  
+    \item $a = 0.1, \, b = 0.4$  
+  \end{choices}
+\end{question}
+
+% 125.
+\begin{question}
+  设随机变量 $X, Y$ 相互独立，且都服从标准正态分布，则  
+  $P(X < Y) = $ \paren[B]
+  \begin{choices}
+    \item $\frac{1}{8}$  
+    \item $\frac{1}{2}$  
+    \item $\frac{1}{4}$  
+    \item $\frac{1}{3}$  
+  \end{choices}
+\end{question}
+
+% 126.
+\begin{question}
+  设二维随机变量 $(X, Y)$ 的联合分布函数为 $F(x, y)$，关于 $X$ 的边缘分布函数为 $F_X(x)$，则下列选项不正确的是 \paren[D]
+  \begin{choices}
+    \item $F_X(x) = F(x, +\infty)$  
+    \item $F_X(x)$ 是单调不减函数  
+    \item $F_X(+\infty) = 1$  
+    \item $F_X(x)$ 是连续函数  
+  \end{choices}
+\end{question}
+
+% 127.
+\begin{question}
+  设二维连续型随机变量 $(X,Y)$ 的联合概率密度函数为  
+  $$f(x,y) = 
+  \begin{cases} 
+  xe^{-y}, & 0 < x < y \\ 
+  0, & \text{其他} 
+  \end{cases}$$ 
+  则当 $x > 0$ 时，条件概率密度函数  
+  $f_{Y|X}(y|x) = $ \paren[A]
+  \begin{choices}
+    \item 
+    $
+    \begin{cases} 
+    e^{x-y}, & y > x \\ 
+    0, & \text{其他} 
+    \end{cases}$
+    
+    \item 
+    $
+    \begin{cases} 
+    xe^x, & x > 0 \\ 
+    0, & \text{其他} 
+    \end{cases}$
+    
+    \item 
+    $
+    \begin{cases} 
+    e^{x-y}, & y > 0 \\ 
+    0, & \text{其他} 
+    \end{cases}$
+    
+    \item 
+    $
+    \begin{cases} 
+    xe^x, & y > x \\ 
+    0, & \text{其他} 
+    \end{cases}$
+  \end{choices}
+\end{question}
+
+% 128.
+\begin{question}
+  设二维连续型随机变量 $(X,Y)$ 的联合概率密度函数为 $f(x,y)$，$f_X(x)$ 是 $X$ 的边缘概率密度函数，则  
+  $\int_{-\infty}^{+\infty} f_X(x) dx$ 等于 \paren[B]
+  \begin{choices}
+    \item $0$  
+    \item $1$  
+    \item $F_X(x)$  
+    \item 无法确定  
+  \end{choices}
+\end{question}
+
+% 129.
+\begin{question}
+  设随机变量 $X$ 与 $Y$ 相互独立，它们的概率密度函数分别为 $f_X(x)$ 和 $f_Y(y)$，则 $(X, Y)$ 的联合概率密度函数为 \paren[D]
+  \begin{choices}
+    \item $\frac{1}{2}[f_X(x) + f_Y(y)]$  
+    \item $f_X(x) + f_Y(y)$  
+    \item $\frac{1}{2}f_X(x)f_Y(y)$  
+    \item $f_X(x)f_Y(y)$  
+  \end{choices}
+\end{question}
+
+% 130.
+\begin{question}
+  设 $(X, Y)$ 的联合密度为  
+  $$f(x, y) = 
+  \begin{cases} 
+  3x, & 0 \leq x < 1, 0 \leq y < x \\ 
+  0, & \text{其他} 
+  \end{cases},$$  
+  则  
+  $P\{Y \leq 1 / 8 | X = 1 / 4\} = $ \paren[C]
+  \begin{choices}
+    \item $\frac{2}{5}$  
+    \item $\frac{1}{4}$  
+    \item $\frac{1}{2}$  
+    \item $0$  
+  \end{choices}
+\end{question}
+
+% 131.
+\begin{question}
+  设随机变量 $X, Y$ 相互独立，且都服从标准正态分布，则  
+  $P(X < Y) = $ \paren[B]
+  \begin{choices}
+    \item $\frac{1}{8}$  
+    \item $\frac{1}{2}$  
+    \item $\frac{1}{4}$  
+    \item $\frac{1}{3}$  
+  \end{choices}
+\end{question}
+
+% 132.
+\begin{question}
+  设离散型随机变量 $X, Y$ 相互独立，分布律分别为  
+
+  \begin{minipage}{0.5\textwidth}
+    \centering
+    \begin{tabular}{|c|c|c|}
+      \hline
+      $X$ & $0$ & $1$ \\
+      \hline
+      $P$ & $0.4$ & $0.6$ \\
+      \hline
+    \end{tabular}
+  \end{minipage}%
+  \begin{minipage}{0.5\textwidth}
+    \centering
+    \begin{tabular}{|c|c|c|}
+      \hline
+      $Y$ & $0$ & $1$ \\
+      \hline
+      $P$ & $0.2$ & $0.8$ \\
+      \hline
+    \end{tabular}
+  \end{minipage}
+
+  则概率 $P(XY = 0)$ 等于 \paren[B]
+  \begin{choices}
+    \item $0.48$  
+    \item $0.52$  
+    \item $1$  
+    \item $0$  
+  \end{choices}
+\end{question}
+
+% 133.
+\begin{question}
+  设 $X \sim* N(0,1), Y \sim* N(1,1)$，且 $X,Y$ 相互独立，则 $P(X+Y \leq 1) =$ \paren[A]
+  \begin{choices}
+    \item $\frac{1}{2}$  
+    \item $\frac{1}{3}$  
+    \item $\frac{\sqrt{2}}{2}$  
+    \item $\frac{1}{4}$  
+  \end{choices}
+\end{question}
+
+% 134.
+\begin{question}
+  设二维随机向量 $(X, Y)$ 的联合分布律为  
+  \begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    \diagbox{$X$}{$Y$} & $0$ & $1$ & $2$ \\
+    \hline
+    $-1$ & $\tfrac{1}{15}$ & $\beta$ & $\tfrac{1}{5}$ \\
+    \hline
+    $1$ & $\alpha$ & $\tfrac{1}{5}$ & $\tfrac{3}{10}$ \\
+    \hline
+    \end{tabular}
+  \end{table}
+
+  若 $X$ 与 $Y$ 相互独立，则 \paren[C]
+  \begin{choices}
+    \item $\alpha = \frac{1}{5}$，$\beta = \frac{1}{15}$  
+    \item $\alpha = \frac{1}{15}$，$\beta = \frac{1}{5}$  
+    \item $\alpha = \frac{1}{10}$，$\beta = \frac{2}{15}$  
+    \item $\alpha = \frac{2}{15}$，$\beta = \frac{1}{10}$  
+  \end{choices}
+\end{question}
+
+% 135.
+\begin{question}
+  设随机变量 $X$ 和 $Y$ 都服从正态分布，且它们不相关，则 \paren[C]
+  \begin{choices}
+    \item $X$ 与 $Y$ 一定独立  
+    \item $(X, Y)$ 服从二维正态分布  
+    \item $X$ 与 $Y$ 未必独立  
+    \item $X + Y$ 服从一维正态分布  
+  \end{choices}
+\end{question}
+
+% 136.
+\begin{question}
+  设随机变量 $X, Y$ 有相同的概率分布律：  
+  $$
+  \begin{pmatrix}
+  -1 & 0 & 1 \\
+  0.25 & 0.5 & 0.25
+  \end{pmatrix},$$
+  并且满足 $P\{XY = 0\} = 1,$ 则
+  $P\{X = Y\}$ 等于 \paren[A]
+  \begin{choices}
+    \item $0$  
+    \item $0.25$  
+    \item $0.50$  
+    \item $1$  
+  \end{choices}
+\end{question}
+
+% 137.
+\begin{question}
+  设二维随机向量 $(X, Y)$ 服从二维正态分布  
+  $N(\mu_1, \mu_2, \sigma_1^2, \sigma_2^2, \rho),$  
+  则 $X$ 与 $Y$ 相互独立的充要条件为 \paren[C]
+  \begin{choices}
+    \item $\mu_1 = \mu_2$  
+    \item $\sigma_1 = \sigma_2$  
+    \item $\rho = 0$  
+    \item $\rho = 1$  
+  \end{choices}
+\end{question}
+
+% 138.
+\begin{question}
+  下列二维正态分布中，$X$ 和 $Y$ 相互独立的是 \paren[C]
+  \begin{choices}
+    \item $(X, Y) \sim* N(0, 0, 1, 1, 0.5)$  
+    \item $(X, Y) \sim* N(1, 0, 0.25, 0.25, -1)$  
+    \item $(X, Y) \sim* N(1, 2, 1, 0.25, 0)$  
+    \item $(X, Y) \sim* N(3, 0, 1, 1, 1)$  
+  \end{choices}
+\end{question}
+
+% 139.
+\begin{question}
+  下列说法正确的是 \paren[C]
+  \begin{choices}
+    \item 边缘概率密度函数相同，其联合分布函数也相同  
+    \item 联合分布可以决定边缘分布，反之亦然  
+    \item 边缘分布相互独立，则联合分布唯一确定  
+    \item 以上都不对  
+  \end{choices}
+\end{question}
+
+% 140.
+\begin{question}
+  设随机变量 $X_1, X_2, \cdots, X_n$ 相互独立，且  
+  $X_i \sim* B(1, p), \, 0 < p < 1, \, i = 1, 2, \cdots, n,$  
+  则  
+  $X = \sum_{i=1}^n X_i$  
+  服从 \paren[D]
+  \begin{choices}
+    \item $\pi(p)$  
+    \item $\pi(np)$  
+    \item $B(1, p)$  
+    \item $B(n, p)$  
+  \end{choices}
+\end{question}
+
+% 141.
+\begin{question}
+  设随机变量 $(X, Y)$ 服从二维正态分布，且 $X$ 与 $Y$ 不相关，$f_X(x), f_Y(y)$ 分别表示 $X$ 和 $Y$ 的概率密度，则在 $Y = y$ 的条件下，$X$ 的条件概率密度  
+  $f_{XY}(x|y)$ 为 \paren[A]
+  \begin{choices}
+    \item $f_X(x)$  
+    \item $f_Y(y)$  
+    \item $f_X(x)f_Y(y)$  
+    \item $\frac{f_X(x)}{f_Y(y)}$  
+  \end{choices}
+\end{question}
+
+% 142.
+\begin{question}
+  设随机变量 $X_1, X_2$ 相互独立，  
+  $P\{X_i = 0\} = P\{X_i = 1\} = \frac{1}{2}, i = 1, 2,$  
+  下列结论正确的是 \paren[B]
+  \begin{choices}
+    \item $X_1 = X_2$  
+    \item $P\{X_1 = X_2\} = \frac{1}{2}$  
+    \item $P\{X_1 = X_2\} = 1$  
+    \item 以上都不对  
+  \end{choices}
+\end{question}
+
+% 143.
+\begin{question}
+  设随机变量 $X,Y$ 都服从正态分布，则 \paren[D]
+  \begin{choices}
+    \item $X+Y$ 一定服从正态分布  
+    \item $X,Y$ 不相关与独立等价  
+    \item $(X,Y)$ 服从正态分布  
+    \item 以上结果都不对  
+  \end{choices}
+\end{question}
+
+% 144.
+\begin{question}
+  设随机变量 $X$ 与 $Y$ 相互独立，它们的分布律如下表
+
+  \begin{minipage}{0.5\textwidth}
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+    $X$ & $0$ & $1$ \\
+    \hline
+    $P$ & $0.5$ & $0.5$ \\
+    \hline
+    \end{tabular}
+  \end{minipage}
+  \begin{minipage}{0.5\textwidth}
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+    $Y$ & $0$ & $1$ \\
+    \hline
+    $P$ & $0.5$ & $0.5$ \\
+    \hline
+    \end{tabular}
+  \end{minipage}
+
+  则 $P(X=Y)$ 等于 \paren[C]
+  \begin{choices}
+    \item $0$  
+    \item $0.25$  
+    \item $0.5$  
+    \item $1$  
+  \end{choices}
+\end{question}
+
+% 145.
+\begin{question}
+  已知连续型随机变量 $X$、$Y$ 相互独立，且有相同的概率密度 $f(x)$，设 $Z = \min\{X, Y\}$，则 $Z$ 的概率密度为 \paren[D]
+  \begin{choices}
+    \item $[f(z)]^2$  
+    \item $2\int_{-\infty}^z f(u)du f(z)$  
+    \item $1 - [1 - f(z)]^2$  
+    \item $2(1 - \int_{-\infty}^z f(u)du)f(z)$  
+  \end{choices}
+\end{question}
+
+% 146.
+\begin{question}
+  设随机变量 $X, Y$ 独立同分布，且 $X$ 的分布函数为 $F(x)$，令 $Z = \max\{X, Y\}$，则 $Z$ 的分布函数为 \paren[A]
+  \begin{choices}
+    \item $F^2(z)$  
+    \item $[1 - F(z)]^2$  
+    \item $1 - [1 - F(z)]^2$  
+    \item $1 - F^2(z)$  
+  \end{choices}
+\end{question}
+
+% 147.
+\begin{question}
+  设随机变量 $X, Y$ 相互独立，分布函数分别为  
+  $F(x), G(y)$，$Z = \max(X, Y)$，则 $Z$ 的分布函数是 \paren[B]
+  \begin{choices}
+    \item $\max\{F(z), G(z)\}$  
+    \item $F(z)G(z)$  
+    \item $F(z) + G(z)$  
+    \item $[1 - F(z)][1 - G(z)]$  
+  \end{choices}
+\end{question}
+
+% 148.
+\begin{question}
+  设 $P(X \geq 0, Y \geq 0) = \frac{3}{7}$，$P(X \geq 0) = P(Y \geq 0) = \frac{4}{7}$，  
+  则 $P(\max\{X, Y\} \geq 0)$ 等于 \paren[C]
+  \begin{choices}
+    \item $\frac{3}{7}$  
+    \item $\frac{4}{7}$  
+    \item $\frac{5}{7}$  
+    \item $\frac{6}{7}$  
+  \end{choices}
+\end{question}
+
+% 149.
+\begin{question}
+  设二维随机变量 $(X, Y)$ 的分布律为  
+  \begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    \diagbox{$X$}{$Y$} & $-1$ & $0$ & $1$ \\
+    \hline
+    $0$ & $0.1$ & $0.3$ & $0.2$ \\
+    \hline
+    $1$ & $0.2$ & $0.1$ & $0.1$ \\
+    \hline
+    \end{tabular}
+  \end{table}
+
+  则 $P\{X+Y=0\}$ 等于 \paren[C]
+  \begin{choices}
+    \item $0.2$  
+    \item $0.3$  
+    \item $0.5$  
+    \item $0.7$  
+  \end{choices}
+\end{question}
+
+% 150.
+\begin{question}
+  设 $(X, Y) \sim* f(x, y) = 
+  \begin{cases} 
+  \frac{1}{\pi}, & x^2 + y^2 < 1 \\ 
+  0, & \text{其他} 
+  \end{cases},$  
+  则 $X$ 与 $Y$ 为 \paren[C]
+  \begin{choices}
+    \item 独立同分布的随机变量  
+    \item 独立不同分布的随机变量  
+    \item 不独立同分布的随机变量  
+    \item 不独立也不同分布的随机变量  
+  \end{choices}
+\end{question}
+
+% 151.
+\begin{question}
+  若 $(X, Y)$ 表示平面上随机点的坐标，记 $F(x, y)$ 为 $(X, Y)$ 的分布函数，则 $(X, Y)$ 落在 $y$ 轴左方（包含 $y$ 轴）的概率为 \paren[A]
+  \begin{choices}
+    \item $F(0, +\infty)$  
+    \item $F(+ \infty, 0)$  
+    \item $1 - F(0, +\infty)$  
+    \item $1 - F(+ \infty, 0)$  
+  \end{choices}
+\end{question}
+
+% 152.
+\begin{question}
+  设二维连续型随机向量 $(X, Y)$ 的概率密度为  
+  $$f(x, y) = 
+  \begin{cases} 
+  12e^{-(3x+4y)}, & x > 0, \; y > 0 \\ 
+  0, & \text{其他} 
+  \end{cases},$$  
+  则 $P\{0 < x < 1, 0 < y < 2\} = $ \paren[C]
+  \begin{choices}
+    \item $(1 - e^{-6})(1 - e^{-8})$  
+    \item $e^{-3}(1 - e^{-8})$  
+    \item $(1 - e^{-3})(1 - e^{-8})$  
+    \item $e^{-8}(1 - e^{-3})$  
+  \end{choices}
+\end{question}
+
+% 153.
+\begin{question}
+  设二维连续型随机变量 $(X, Y)$ 的联合概率密度函数为  
+  $$f(x, y) = 
+  \begin{cases} 
+  e^{-y}, & 0 < x < y \\ 
+  0, & \text{其他} 
+  \end{cases},$$  
+  则 $(X, Y)$ 关于 $X$ 的边缘概率密度函数 $f_X(x)$ 等于 \paren[A]
+  \begin{choices}
+    \item 
+    $
+    \begin{cases} 
+    e^{-x}, & x > 0 \\ 
+    0, & \text{其他} 
+    \end{cases}$
+    
+    \item 
+    $
+    \begin{cases} 
+    xe^{-x}, & x > 0 \\ 
+    0, & \text{其他} 
+    \end{cases}$
+    
+    \item 
+    $
+    \begin{cases} 
+    e^{-x}, & 0 < x < y \\ 
+    0, & \text{其他} 
+    \end{cases}$
+    
+    \item 
+    $
+    \begin{cases} 
+    xe^{-x}, & 0 < x < y \\ 
+    0, & \text{其他} 
+    \end{cases}$
+  \end{choices}
+\end{question}
+
+% 154.
+\begin{question}
+  设二维随机变量 $(X, Y)$ 在单位圆内服从均匀分布，则 $(X, Y)$ 关于 $X$ 的边缘密度为 \paren[B]
+  \begin{choices}
+    \item 
+    $f_X(x) = 
+    \begin{cases} 
+    \frac{1}{2}, & -1 < x < 1 \\ 
+    0, & \text{其他}
+    \end{cases}$
+    
+    \item 
+    $f_X(x) =
+    \begin{cases} 
+    \frac{2}{\pi} \sqrt{1-x^2}, & -1 < x < 1 \\ 
+    0, & \text{其他}
+    \end{cases}$
+    
+    \item 
+    $f_X(x) =
+    \begin{cases} 
+    1, & 0 < x < 1 \\ 
+    0, & \text{其他}
+    \end{cases}$
+    
+    \item 
+    $f_X(x) =
+    \begin{cases} 
+    \frac{1}{\pi} \sqrt{1-x^2}, & 0 < x < 1 \\ 
+    0, & \text{其他}
+    \end{cases}$
+  \end{choices}
+\end{question}
+
+% 155.
+\begin{question}
+  设二维随机向量 $(X, Y)$ 的概率密度为 $f(x, y)$，则  
+  $P(X \geq 1)$ 等于 \paren[B]
+  \begin{choices}
+    \item 
+    $\int_{-\infty}^{1} dx \int_{-\infty}^{+\infty} f(x, y) dy$  
+    
+    \item 
+    $\int_{1}^{+\infty} dx \int_{-\infty}^{+\infty} f(x, y) dy$  
+    
+    \item 
+    $\int_{-\infty}^{1} f(x, y) dx$  
+    
+    \item 
+    $\int_{1}^{+\infty} f(x, y) dx$  
+  \end{choices}
+\end{question}
+
+% 156.
+\begin{question}
+  设二维随机向量 $(X, Y)$ 的联合分布函数为 $F(x, y)$，则以下结论中错误的是 \paren[B]
+  \begin{choices}
+    \item $F(-\infty, +\infty) = 0$  
+    \item $F(+\infty, y) = 1$  
+    \item $F(-\infty, -\infty) = 0$  
+    \item $F(+\infty, +\infty) = 1$  
+  \end{choices}
+\end{question}
+
+% 157.
+\begin{question}
+  设二维随机变量 $(X, Y)$ 的分布函数为 $F(x, y)$，则下列选项不正确的是 \paren[D]
+  \begin{choices}
+    \item $F(-\infty, +\infty) = 0$  
+    \item $F(x, +\infty)$ 关于 $x$ 单调不减  
+    \item $P(X > x) = 1 - F(x, +\infty)$  
+    \item $P(X > 0, Y > 0) = 1 - F(0, 0)$  
+  \end{choices}
+\end{question}
+
+% 158.
+\begin{question}
+  设随机变量 $U$ 在区间 $[-2,2]$ 上服从均匀分布，  
+  而随机变量  
+  $$X = \begin{cases} 
+  -1, & \text{若 } U \leq -1 \\ 
+  1, & \text{若 } U > -1
+  \end{cases}, \quad Y = \begin{cases} 
+  -1, & \text{若 } U \leq 1 \\ 
+  1, & \text{若 } U > 1 
+  \end{cases}$$  
+  则  
+  $P\{X=-1,Y=-1\} = $ \paren[B]
+  \begin{choices}
+    \item $\frac{1}{16}$  
+    \item $\frac{1}{4}$  
+    \item $\frac{1}{2}$  
+    \item $0$  
+  \end{choices}
+\end{question}
+
+% 159.
+\begin{question}
+  设随机变量 $X, Y$ 相互独立，且都服从区间 $[0, 1]$ 上的均匀分布，则 $P(X + Y \leq 0.5)$ 等于 \paren[B]
+  \begin{choices}
+    \item $0.5$  
+    \item $0.125$  
+    \item $0.375$  
+    \item $0.25$  
+  \end{choices}
+\end{question}
+
+\section{随机变量的数字特征}
+
+% 160.
+\begin{question}
+  随机变量 $X$ 的分布律为
+
+  \begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    $X$ & $-2$ & $0$ & $1$ & $2$ \\
+    \hline
+    $P$ & $0.3$ & $0.1$ & $0.1$ & $0.5$ \\
+    \hline
+    \end{tabular}
+  \end{table}
+
+  则 $E(X^2) =$ \paren[B]
+  \begin{choices}
+    \item $0.5$
+    \item $3.3$
+    \item $2.3$
+    \item $1.2$
+  \end{choices}
+\end{question}
+
+% 161.
+\begin{question}
+  设 $(X, Y)$ 为二维连续型随机向量，且 $EX$, $EY$, $E(XY)$ 都存在，则 $X$ 与 $Y$ 不相关的充分必要条件是 \paren[C]
+  \begin{choices}
+    \item $X$ 与 $Y$ 相互独立
+    \item $E(X + Y) = EX + EY$
+    \item $E(XY) = EXEY$
+    \item $(X, Y) \sim* N(\mu_1, \mu_2, \sigma_1^2, \sigma_2^2, 0)$
+  \end{choices}
+\end{question}
+
+% 162.
+\begin{question}
+  设随机变量 $X$ 与 $Y$ 相互独立，且 $X \sim* N(1,4)$，$Y \sim* N(0,1)$，令 $Z = X - Y$，则 $DZ =$ \paren[C]
+  \begin{choices}
+    \item $1$
+    \item $3$
+    \item $5$
+    \item $6$
+  \end{choices}
+\end{question}
+
+% 163.
+\begin{question}
+  设随机向量 $X_i \sim* B(1,p)$，$i=1,2,\cdots,n$，且它们相互独立，记 $q=1-p$，令
+  $\overline{X} = \frac{1}{n}\sum_{i=1}^{n}X_i$
+  则
+  $D\overline{X} = $
+  \paren[B]
+  \begin{choices}
+    \item $\frac{pq}{n^2}$
+    \item $\frac{pq}{n}$
+    \item $pq$
+    \item $npq$
+  \end{choices}
+\end{question}
+
+% 164.
+\begin{question}
+  已知随机变量 $X$ 和 $Y$ 相互独立，且它们分别在区间 $[-1, 3]$ 和 $[2, 4]$ 上服从均匀分布，则 $E(XY) =$ \paren[A]
+  \begin{choices}
+    \item $3$
+    \item $6$
+    \item $10$
+    \item $12$
+  \end{choices}
+\end{question}
+
+% 165.
+\begin{question}
+  设随机变量 $X \sim* N(-1,5)$，$Y \sim* N(1,2)$，且 $X$ 与 $Y$ 相互独立，则 $X - 2Y$ 服从 \paren[B]
+  \begin{choices}
+    \item $N(-3,1)$
+    \item $N(-3,13)$
+    \item $N(-3,9)$
+    \item $N(3,1)$
+  \end{choices}
+\end{question}
+
+% 166.
+\begin{question}
+  设随机变量 $X$ 服从参数为 2 的泊松分布，则下列结论中正确的是 \paren[D]
+  \begin{choices}
+    \item 
+    $E(X) = 0.5$, $D(X) = 0.5$
+    
+    \item 
+    $E(X) = 0.5$, $D(X) = 0.25$
+    
+    \item 
+    $E(X) = 2$, $D(X) = 4$
+    
+    \item 
+    $E(X) = 2$, $D(X) = 2$
+  \end{choices}
+\end{question}
+
+% 167.
+\begin{question}
+  设随机变量 $X \sim* B(30, \frac{1}{6})$，则 $E(X) =$ \paren[D]
+  \begin{choices}
+    \item $\frac{1}{6}$
+    \item $\frac{5}{6}$
+    \item $\frac{25}{6}$
+    \item $5$
+  \end{choices}
+\end{question}
+
+% 168.
+\begin{question}
+  设随机变量 $X$ 的期望 $E(X)$ 与方差 $D(X)$ 都存在，则对任意正数 $\varepsilon$，有 \paren[A]
+  \begin{choices}
+    \item 
+    $P\{|X - EX|\geq \varepsilon\} \leq \frac{DX}{\varepsilon^2}$
+    
+    \item 
+    $P\{|X - EX| < \varepsilon\} \geq \frac{DX}{\varepsilon^2}$
+    
+    \item 
+    $P\{|X - EX|\geq \varepsilon\} > \frac{DX}{\varepsilon^2}$
+    
+    \item 
+    $P\{|X - EX| < \varepsilon\} < 1 - \frac{DX}{\varepsilon^2}$
+  \end{choices}
+\end{question}
+
+% 169.
+\begin{question}
+  设 $EY = EY = 2$，$Cov(X,Y) = -\frac{1}{6}$，则 $E(XY) =$ \paren[B]
+  \begin{choices}
+    \item $\frac{1}{6}$
+    \item $\frac{23}{6}$
+    \item $\frac{4}{6}$
+    \item $\frac{25}{6}$
+  \end{choices}
+\end{question}
+
+% 170.
+\begin{question}
+  已知 $DX = 4$，$DY = 25$，$Cov(X,Y) = 4$，则
+  $\rho_{XY} = $
+  \paren[C]
+  \begin{choices}
+    \item $0.004$
+    \item $0.04$
+    \item $0.4$
+    \item $4$
+  \end{choices}
+\end{question}
+
+% 171.
+\begin{question}
+  设 $X, Y$ 为两个相互独立的随机变量，若 $DX=1$，$DY=1$，则
+  $D(3X-2Y+1) = $
+  \paren[B]
+  \begin{choices}
+    \item $14$
+    \item $13$
+    \item $5$
+    \item $2$
+  \end{choices}
+\end{question}
+
+% 172.
+\begin{question}
+  设随机变量 $X$ 的方差存在，且记 $EX = \mu$，则对任意常数 $C$，必有 \paren[D]
+  \begin{choices}
+    \item 
+    $E(X - C)^2 = EX^2 - C^2$
+    
+    \item 
+    $E(X - C)^2 = EX^2 - \mu^2$
+    
+    \item 
+    $E(X - C)^2 < EX^2 - \mu^2$
+    
+    \item 
+    $E(X - C)^2 \geq EX^2 - \mu^2$
+  \end{choices}
+\end{question}
+
+% 173.
+\begin{question}
+  设二维随机变量 $(X, Y)$ 的分布律为
+
+  \begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    \diagbox{$X$}{$Y$} & $0$ & $1$ & $2$ \\
+    \hline
+    $0$ & $0.3$ & $0.1$ & $0.1$ \\
+    \hline
+    $1$ & $0.2$ & $0.1$ & $0.2$ \\
+    \hline
+    \end{tabular}
+  \end{table}
+
+  则 $X, Y$ 的协方差 $Cov(X, Y) =$ \paren[D]
+  \begin{choices}
+    \item $0.8$
+    \item $0.5$
+    \item $0.9$
+    \item $0.1$
+  \end{choices}
+\end{question}
+
+% 174.
+\begin{question}
+  设随机变量 $X \sim* \pi(3)$，则 $X$ 的二阶原点为 \paren[A]
+  \begin{choices}
+    \item $12$
+    \item $3$
+    \item $9$
+    \item $6$
+  \end{choices}
+\end{question}
+
+% 175.
+\begin{question}
+  设随机变量 $X \sim* N(0,1)$，则 $E(e^X) =$ \paren[C]
+  \begin{choices}
+    \item $e^{-1/2}$
+    \item $e$
+    \item $e^{1/2}$
+    \item $e^2$
+  \end{choices}
+\end{question}
+
+% 176.
+\begin{question}
+  已知二维随机向量 $(X,Y)$ 的联合分布列为
+
+  \begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    \diagbox{$X$}{$Y$} & $0$ & $1$ & $2$ \\
+    \hline
+    $1$ & $0.1$ & $0.2$ & $0.1$ \\
+    \hline
+    $2$ & $0.3$ & $0.1$ & $0.2$ \\
+    \hline
+    \end{tabular}
+  \end{table}
+
+  则 $E(X) =$ \paren[B]
+  \begin{choices}
+    \item $0.6$
+    \item $0.9$
+    \item $1$
+    \item $1.6$
+  \end{choices}
+\end{question}
+
+% 177.
+\begin{question}
+  设随机变量 $X, Y$ 相互独立，$X \sim* N(2,9)$，$Y \sim* \pi(4)$，则
+  $E(X^2Y) = $
+  \paren[C]
+  \begin{choices}
+    \item $17$
+    \item $9$
+    \item $52$
+    \item $20$
+  \end{choices}
+\end{question}
+
+% 178.
+\begin{question}
+  设二维随机变量 $(X, Y)$ 的分布律为
+
+  \begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    \diagbox{$X$}{$Y$} & $-1$ & $1$ & $2$ \\
+    \hline
+    $0$ & $0.2$ & $0.3$ & $0.1$ \\
+    \hline
+    $3$ & $0.1$ & $0.2$ & $0.1$ \\
+    \hline
+    \end{tabular}
+  \end{table}
+
+  则 $E(X-Y^2) =$ \paren[A]
+  \begin{choices}
+    \item $-3.0$
+    \item $3.6$
+    \item $0.9$
+    \item $4.5$
+  \end{choices}
+\end{question}
+
+% 179.
+\begin{question}
+  设 $(X, Y) \sim* N(0, 1, 1, 4, 0)$，则 $E(X+2Y) =$ \paren[C]
+  \begin{choices}
+    \item $0$
+    \item $1$
+    \item $2$
+    \item $4$
+  \end{choices}
+\end{question}
+
+% 180.
+\begin{question}
+  设随机变量 $X$ 的概率密度函数为
+  $$
+  f(x) = 
+  \begin{cases} 
+  2e^{-2x}, & x > 0 \\ 
+  0, & x \leq 0 
+  \end{cases},
+  $$
+  则 $E(e^{-x}) =$ \paren[D]
+  \begin{choices}
+    \item $1/2$
+    \item $1$
+    \item $1/3$
+    \item $2/3$
+  \end{choices}
+\end{question}
+
+% 181.
+\begin{question}
+  若 $E(XY) = E(X)E(Y)$，则 \paren[C]
+  \begin{choices}
+    \item $X$ 与 $Y$ 相互独立
+    \item $X$ 与 $Y$ 不独立
+    \item $X$ 与 $Y$ 的独立性不确定
+    \item 以上答案均不对
+  \end{choices}
+\end{question}
+
+% 182.
+\begin{question}
+  某厂推土机发生故障后的维修时间 $T$ 是一个随机变量（单位：$h$），其密度函数为
+  $$
+  p(t) = 
+  \begin{cases} 
+  0.02e^{-0.02t}, & t > 0 \\ 
+  0, & t \leq 0 
+  \end{cases},
+  $$
+  则其平均维修时间为 \paren[B]
+  \begin{choices}
+    \item $30$
+    \item $50$
+    \item $40$
+    \item $45$
+  \end{choices}
+\end{question}
+
+% 183.
+\begin{question}
+  设 $X$ 为随机变量，其方差存在，$c$ 为任意非零常数，则下列等式中正确的是 \paren[A]
+  \begin{choices}
+    \item $D(X+c) = D(X)$
+    \item $D(X+c) = D(X)+c$
+    \item $D(X-c) = D(X)-c$
+    \item $D(cX+c) = cD(X)$
+  \end{choices}
+\end{question}
+
+% 184.
+\begin{question}
+  设随机变量 $X \sim* B(100,0.1)$，则方差 $DX =$ \paren[C]
+  \begin{choices}
+    \item $10$
+    \item $100.1$
+    \item $9$
+    \item $3$
+  \end{choices}
+\end{question}
+
+% 185.
+\begin{question}
+  某人射击直到中靶为止，已知每次射击中靶的概率为 $0.75$。则射击次数的数学期望与方差分别为 \paren[A]
+  \begin{choices}
+    \item $\frac{4}{3}$ 与 $\frac{9}{4}$
+    \item $\frac{4}{3}$ 与 $\frac{9}{16}$
+    \item $\frac{1}{4}$ 与 $\frac{9}{4}$
+    \item $\frac{4}{3}$ 与 $\frac{4}{9}$
+  \end{choices}
+\end{question}
+
+% 186.
+\begin{question}
+  设随机变量 $X$ 服从区间 $[0, b]$ 上的均匀分布，且
+  $DX = \frac{1}{3} $，
+  则 $b$ 的值为 \paren[D]
+  \begin{choices}
+    \item $3$
+    \item $2/3$
+    \item $1/3$
+    \item $2$
+  \end{choices}
+\end{question}
+
+% 187.
+\begin{question}
+  设随机变量 $X$ 的概率密度为
+  $$
+  f(x) = 
+  \begin{cases} 
+  3e^{-3x}, & x > 0 \\ 
+  0, & x \leq 0 
+  \end{cases},
+  $$
+  则下列各项中正确的是 \paren[D]
+  \begin{choices}
+    \item $E(X) = 3$, $D(X) = 3$
+    \item $E(X) = 3$, $D(X) = 9$
+    \item $E(X) = 1/3$, $D(X) = 1/3$
+    \item $E(X) = 1/3$, $D(X) = 1/9$
+  \end{choices}
+\end{question}
+
+% 188.
+\begin{question}
+  设随机变量 $X$ 的期望和方差分别为
+  $E(X) = \mu, D(X) = \sigma^2$
+  令$Y = \frac{X - \mu}{\sigma}$
+  则$DY = $
+  \paren[A]
+  \begin{choices}
+    \item $1$
+    \item $\sigma$
+    \item $\sigma^2$
+    \item $\mu$
+  \end{choices}
+\end{question}
+
+% 189.
+\begin{question}
+  设二维随机向量 $(X, Y) \sim* N(\mu_1, \mu_2, \sigma_1^2, \sigma_2^2, 0)$，则下列结论不正确的是 \paren[D]
+  \begin{choices}
+    \item $X \sim* N(\mu_1, \sigma_1^2)$, $Y \sim* N(\mu_2, \sigma_2^2)$
+    \item $X$ 与 $Y$ 相互独立的充分必要条件是 $\rho = 0$
+    \item $E(X + Y) = \mu_1 + \mu_2$
+    \item $D(X - Y) = \sigma_1^2 - \sigma_2^2$
+  \end{choices}
+\end{question}
+
+% 190.
+\begin{question}
+  设二维连续型随机变量 $(X, Y)$ 的联合概率密度函数为
+  $$
+  f(x, y) =
+  \begin{cases} 
+  4xy, & 0 < x < 1, 0 < y < 1 \\
+  0, & \text{其他}
+  \end{cases},
+  $$
+  则 $\rho_{XY} =$ \paren[A]
+  \begin{choices}
+    \item $0$
+    \item $1$
+    \item $-1$
+    \item $1/2$
+  \end{choices}
+\end{question}
+
+% 191.
+\begin{question}
+  设 $X, Y$ 为两个随机变量，且 $\rho_{XY} = 0$，设
+  $U = 2X, \quad V = -Y$
+  则 $\rho_{UV}$ 等于 \paren[C]
+  \begin{choices}
+    \item $1$
+    \item $1/2$
+    \item $0$
+    \item $-1/2$
+  \end{choices}
+\end{question}
+
+% 192.
+\begin{question}
+  设 $X_1, X_2$ 是相互独立的随机变量，并且都服从参数为 2 的泊松分布，令
+  $Y = \frac{X_1 + X_2}{2}$
+  则$EY^2 =$
+  \paren[A]
+  \begin{choices}
+    \item $5$
+    \item $2$
+    \item $4$
+    \item $1$
+  \end{choices}
+\end{question}
+
+% 193.
+\begin{question}
+  设随机变量 $X, Y$ 相互独立，$X \sim* N(0.5)$, $Y \sim* N(2.4)$，则
+  $(X, Y)$
+  的协方差矩阵为 \paren[B]
+  \begin{choices}
+    \item $\begin{pmatrix} 0 & 5 \\ 2 & 0 \end{pmatrix}$
+    \item $\begin{pmatrix} 5 & 0 \\ 0 & 4 \end{pmatrix}$
+    \item $\begin{pmatrix} 0 & 5 \\ 4 & 2 \end{pmatrix}$
+    \item $\begin{pmatrix} 5 & 0 \\ 2 & 4 \end{pmatrix}$
+  \end{choices}
+\end{question}
+
+% 194.
+\begin{question}
+  设二维随机向量 $(X, Y) \sim* N(1, 1, 4, 9, 1/2)$，则
+  $Cov(X, Y) =$
+  \paren[B]
+  \begin{choices}
+    \item $\frac{1}{2}$
+    \item $3$
+    \item $18$
+    \item $36$
+  \end{choices}
+\end{question}
+
+\section{大数定律与中心极限定理}
+
+% 195.
+\begin{question}
+  已知某种电器元件的寿命 $X$ 服从均值为 100 小时的指数分布。现随机抽取 25 只元件，设它们的寿命是相互独立的。根据中心极限定理，这 25 只元件的寿命总和大于 2900 小时的概率为 
+  （备用数据：$\Phi(0.8) = 0.7881$）
+  \paren[C]
+
+  \begin{choices}
+    \item $0.0228$
+    \item $0.7881$
+    \item $0.2119$
+    \item $0.9772$
+  \end{choices}
+\end{question}
+
+% 196.
+\begin{question}
+  某单位有 300 部电话，每部电话约有 4\% 的时间使用外线。假设每部电话是否使用外线是相互独立的，根据中心极限定理，若要使得外线畅通的概率不小于 0.95，该单位至少需要装（\quad ）条外线
+  （备用数据：$\Phi(1.65) = 0.95, \sqrt{2} = 1.414$）
+  \paren[C]
+  \begin{choices}
+    \item $16$
+    \item $17$
+    \item $18$
+    \item $20$
+  \end{choices}
+\end{question}
+
+% 197.
+\begin{question}
+  设随机变量 $X$ 的方差为 2，则根据切贝雪夫不等式有估计
+  $P\{ |X - EX| \geq 2\} \leq$
+  \paren[A]
+  \begin{choices}
+    \item $1/2$
+    \item $1/3$
+    \item $1/4$
+    \item $1/8$
+  \end{choices}
+\end{question}
+
+% 198.
+\begin{question}
+  设随机变量 $X_i, i \geq 1$ 独立同分布，公共概率密度函数为
+  $$
+  f(x) = \frac{a}{\pi(a^2 + x^2)}, \quad x \in \mathbb{R}, a \neq 0,
+  $$
+  则辛钦大数定律对序列 $\{X_i, i \geq 1\}$ \paren[B]
+  \begin{choices}
+    \item 适用
+    \item 不适用
+    \item 当对一些特殊参数值 $a$ 适用
+    \item 无法判断
+  \end{choices}
+\end{question}
+
+% 199.
+\begin{question}
+  设 $X_1, X_2, \cdots$ 为独立同分布的随机变量序列，且服从期望为 2 的指数分布，则当 $n \to \infty$ 时，
+  $\frac{1}{n} \sum_{i=1}^{n} X_i^2$
+  依概率收敛于 \paren[D]
+  \begin{choices}
+    \item $2$
+    \item $4$
+    \item $6$
+    \item $8$
+  \end{choices}
+\end{question}
+
+% 200.
+\begin{question}
+  设随机变量序列 $X_i, i \geq 1$ 独立同分布，且
+  $E(X_i) = \mu, D(X_i) = \sigma^2, i = 1, 2, \cdots$
+  则
+  $\frac{1}{n} \sum_{i=1}^n (X_i - \overline{X})^2$
+  依概率收敛于 \paren[B]
+  \begin{choices}
+    \item $0$
+    \item $\sigma^2$
+    \item $\sigma^2 + \mu^2$
+    \item $\mu^2$
+  \end{choices}
+\end{question}
+
+% 201.
+\begin{question}
+  商店出售某种贵重商品，据经验该商品每周销售量服从参数为 1 的泊松分布。假定各周的销售量是相互独立的，由中心极限定理，此商店一年内（52 周）售出该商品的件数在 52 到 70 之间的概率约为 
+  （备用数据：$\sqrt{13} = 3.6$, $\Phi(2.5) = 0.9938$）
+  \paren[B]
+
+  \begin{choices}
+    \item $0.5062$
+    \item $0.4938$
+    \item $0.9938$
+    \item $0$
+  \end{choices}
+\end{question}
+
+% 202.
+\begin{question}
+  设随机变量 $X_1, X_2, \cdots$ 相互独立且都服从 0-1 分布，且 $P\{X_i = 1\} = p$，$0 < p < 1$，$i = 1, 2, \cdots$。令
+  $Y = \sum_{i=1}^n X_i$
+  $\Phi(x)$ 为标准正态分布函数，则
+  $\lim_{p \to \infty} P\left\{\frac{Y - np}{\sqrt{np(1-p)}} \leq 1\right\} =$
+  \paren[B]
+  \begin{choices}
+    \item $0$
+    \item $\Phi(1)$
+    \item $1 - \Phi(1)$
+    \item $1$
+  \end{choices}
+\end{question}
+
+% 203.
+\begin{question}
+  将一枚质地均匀的硬币连掷 100 次，根据中心极限定理，出现正面的次数大于 60 的概率约为
+  （备用数据：$\Phi(1) = 0.8413, \Phi(2) = 0.9772$）
+  \paren[A]
+
+  \begin{choices}
+    \item $0.0228$
+    \item $0.9772$
+    \item $0.1587$
+    \item $0.8413$
+  \end{choices}
+\end{question}
+
+% 204.
+\begin{question}
+  设随机变量 $X_1, X_2, \cdots$ 独立同分布，且都服从二项分布 $b(4,0.5)$，则当 $n \to \infty$ 时，
+  $\frac{1}{n} \sum_{i=1}^{n} X_i$
+  依概率收敛到 \paren[B]
+  \begin{choices}
+    \item $0$
+    \item $2$
+    \item $1$
+    \item $5$
+  \end{choices}
+\end{question}
+
+% 205.
+\begin{question}
+  下列命题正确的是 \paren[C]
+  \begin{choices}
+    \item 由辛钦大数定律可以得出切比雪夫大数定律
+    \item 由切比雪夫大数定律可以得出辛钦大数定律
+    \item 由切比雪夫大数定律可以得出伯努利大数定律
+    \item 由伯努利大数定律可以得出切比雪夫大数定律
+  \end{choices}
+\end{question}
+
+% 206.
+\begin{question}
+  设 $n_A$ 为 $n$ 重伯努利试验中 $A$ 发生的次数，$P(A) = p$，则以下说法不正确的是 \paren[C]
+  \begin{choices}
+    \item 
+    $n_A \sim* b(n, p)$
+    
+    \item 
+    $\frac{n_A}{n} \xrightarrow{p} p$
+    
+    \item 
+    $\frac{n_A}{n} \sim* N(p, p(1-p)/n)$
+    
+    \item 
+    $\left(\frac{n_A}{n}\right)^2 \xrightarrow{p} p^2$
+  \end{choices}
+\end{question}
+
+% 207.
+\begin{question}
+  设 $X_1, X_2, \cdots, X_n$ 独立且都服从正态分布 $N(\mu_1, \sigma_1^2)$，$Y_1, Y_2, \cdots, Y_n$ 独立且都服从正态分布 $N(\mu_2, \sigma_2^2)$，且 $\sigma_1^2 > \sigma_2^2 > 0$，若诸 $X_i$ 和 $Y_j$，$i = 1, 2, \cdots, n$，$j = 1, 2, \cdots, n$ 也相互独立，记
+  $\overline{X} = \frac{1}{n} \sum_{i=1}^n X_i, \overline{Y} = \frac{1}{n} \sum_{i=1}^n Y_i,$
+  则以下结果不对的是 \paren[C]
+
+  \begin{choices}
+    \item 
+    $\overline{X} - \overline{Y} \xrightarrow{P} \mu_1 - \mu_2, n \to \infty$
+    
+    \item 
+    $\overline{X} + \overline{Y} \xrightarrow{P} \mu_1 + \mu_2, n \to \infty$
+    
+    \item 
+    $\overline{X} - \overline{Y} \sim* N \left( \mu_1 - \mu_2, \frac{\sigma_1^2}{n} - \frac{\sigma_2^2}{n} \right)$
+    
+    \item 
+    $\overline{X} + \overline{Y} \sim* N \left( \mu_1 + \mu_2, \frac{\sigma_1^2}{n} + \frac{\sigma_2^2}{n} \right)$
+  \end{choices}
+\end{question}
+
+% 208.
+\begin{question}
+  某电子计算机主机有 100 个终端，每个终端有 20\% 的可能处于闲置状态，若各终端被使用与否是相互独立的。由中心极限定理，至少有 15 个终端闲置的概率约为 
+  （备用数据：$\Phi(1.25) = 0.8944, \Phi(2) = 0.9772$）
+  \paren[C]
+
+  \begin{choices}
+    \item $0.0228$
+    \item $0.9772$
+    \item $0.8944$
+    \item $0.1056$
+  \end{choices}
+\end{question}
+
+% 209.
+\begin{question}
+  一加法器同时收到 20 个噪声电压 $V_k$，$(k=1,2,\cdots,20)$，设它们是相互独立的随机变量，且都在区间 $(0,10)$ 上服从均匀分布，记
+  $V = \sum_{k=1}^{20} V_k$
+  由中心极限定理，$P\{V > 105\} $约为
+  （备用数据：$\sqrt{0.6} = 0.774, \Phi(0.387) = 0.652$）
+  \paren[C]
+
+  \begin{choices}
+    \item $0.774$
+    \item $0.652$
+    \item $0.348$
+    \item $0.226$
+  \end{choices}
+\end{question}
+
+% 210.
+\begin{question}
+  一船舶在某海区航行，已知每遭受一次波浪冲击纵摇角大于 $3^\circ$ 的概率为 $p=1/3$，若船舶遭受了 $90000$ 次波浪冲击，由中心极限定理，其中有 $29500\sim30500$ 次纵摇角大于 $3^\circ$ 的概率是 
+  （备用数据：$\sqrt{2}=1.414, \Phi(3.536)=0.9998$）
+  \paren[D]
+
+  \begin{choices}
+    \item $0.9998$
+    \item $0.0002$
+    \item $0.0004$
+    \item $0.9996$
+  \end{choices}
+\end{question}
+
+% 211.
+\begin{question}
+  设 $X_1, X_2, \cdots, X_n$ 为独立随机变量，令
+  $S_n = X_1 + X_2 + \cdots + X_n$
+  根据独立同分布中心极限定理，当 $n$ 充分大时，$S_n$ 近似服从正态分布，若
+  $X_1, X_2, \cdots, X_n $
+  \paren[C]
+  \begin{choices}
+    \item 有相同的期望
+    \item 有相同的方差
+    \item 服从相同的分布，方差存在且不为 0
+    \item 服从同一离散型分布
+  \end{choices}
+\end{question}
+
+% 212.
+\begin{question}
+  设 $\Phi(x)$ 为标准正态分布的分布函数，
+  $$
+  X_i = 
+  \begin{cases} 
+  1, & \text{事件 } A \text{ 发生} \\ 
+  0, & \text{事件 } A \text{ 不发生}
+  \end{cases}, \quad i=1,2,\cdots,100,
+  $$
+  且 $P(A)=0.8$, $X_1, X_2, \cdots, X_{100}$ 相互独立。令 $Y = \sum_{i=1}^{100} X_i$，则由中心极限定理知 $Y$ 的分布函数 $F(y)$ 近似于 \paren[B]
+
+  \begin{choices}
+    \item $\Phi(y)$
+    \item $\Phi(\frac{y-80}{4})$
+    \item $\Phi(16y + 80)$
+    \item $\Phi(4y + 80)$
+  \end{choices}
+\end{question}
+
+% 213.
+\begin{question}
+  设随机变量 $X_n, n=1,2,\cdots$ 相互独立，且都服从区间 $[-1,1]$ 上的均匀分布，由中心极限定理，
+  $\lim_{n \to \infty} P \left\{ \frac{1}{\sqrt{n}} \sum_{k=1}^n X_k \leq 1 \right\} =$
+  （备用数据：$\Phi(\sqrt{3}) = 0.9582, \Phi(3) = 0.9987$）
+  \paren[A]
+
+  \begin{choices}
+    \item $0.9582$
+    \item $0.9987$
+    \item $0.0418$
+    \item $0.0013$
+  \end{choices}
+\end{question}
+
+% 214.
+\begin{question}
+  若某厂生产的某种零件的质量（单位：kg）的数学期望为 0.5，方差为 0.02，现从一批零件中随机取出 5000 个。由中心极限定理，这 5000 个零件的总质量超过 2510 的概率约为 
+  （结果保留 2 位小数，备用数据：$\Phi(1) = 0.8413$）
+  \paren[B]
+
+  \begin{choices}
+    \item $0.84$
+    \item $0.16$
+    \item $0.34$
+    \item $0.66$
+  \end{choices}
+\end{question}
+
+% 215.
+\begin{question}
+  设每天有 200 架飞机在某机场降落（各飞机降落是相互独立的），且任一飞机在某一时刻降落的概率为 0.02。为保证某一时刻飞机需立即降落而没有空闲跑道的概率小于 0.01（每条跑道只能允许一架飞机降落），根据中心极限定理，则该机场至少需配备（\quad ）条跑道。
+  （备用数据：$\Phi(2.33) = 0.99$，$\sqrt{98} = 9.9$）
+  \paren[C]
+
+  \begin{choices}
+    \item $7$
+    \item $8$
+    \item $9$
+    \item $10$
+  \end{choices}
+\end{question}
+
+% 216.
+\begin{question}
+  设随机变量 $X_1, X_2, \cdots, X_n, \cdots$ 独立同分布的随机变量序列，且都服从期望为 $1/2$ 的指数分布，则当 $n$ 充分大时，随机变量
+  $Y_n = \frac{1}{n} \sum_{i=1}^n X_i$
+  的概率分布近似服从 \paren[C]
+
+  \begin{choices}
+    \item $N(2,4)$
+    \item $N\left(2,\frac{4}{n}\right)$
+    \item $N\left(\frac{1}{2},\frac{1}{4n}\right)$
+    \item $N(2n,4n)$
+  \end{choices}
+\end{question}
+
+% 217.
+\begin{question}
+  某人寿保险公司每年有 10000 人投保，每人每年付 12 元的保费，如果该年内投保人死亡，保险公司应付 1000 元的赔偿费，已知一个人一年内死亡的概率为 0.0064。根据中心极限定理，该保险公司一年内的利润不少于 48000 元的概率近似等于 
+  （备用数据：$\sqrt{63.5904} \approx 8, \Phi(1) = 0.8413, \Phi(2) = 0.9772$）
+  \paren[D]
+
+  \begin{choices}
+    \item $0.0228$
+    \item $0.9772$
+    \item $0.1587$
+    \item $0.8413$
+  \end{choices}
+\end{question}
+
+% 218.
+\begin{question}
+  某车间有 200 台车床,在生产期间由于需要检修、调换刀具、变换位置及调整工件等常需停车．设开工率为 0.6, 并设每台车床的工作是独立的, 且在开工时需要电力 1 千瓦．由中心极限定理, 若需要以 95\% 的概率保证该车间不会因电力不足而影响生产, 则至少需要的电能为（\quad ）千瓦
+  (备用数据: $\Phi(1.65) = 0.95, \sqrt{3} = 1.73$)
+  \paren[B]
+
+  \begin{choices}
+  \item $165$
+  \item $132$
+  \item $120$
+  \item $100$
+  \end{choices}
+\end{question}
+
+% 219.
+\begin{question}
+  某药厂生产的某种药品, 声称对某疾病的治愈率为 80\%. 现在为了检验此治愈率, 任意抽取 100 个患此种疾病的患者进行临床试验, 如果至少有 75 人治愈, 则此药通过检验. 若此药物实际治愈率确实为 80\%, 由中心极限定理,其通过检验的概率约为
+  (备用数据: $\Phi(1.25) = 0.8944, \Phi(2) = 0.9772$)
+  \paren[A]
+  
+  \begin{choices}
+  \item $0.8944$
+  \item $0.0228$
+  \item $0.1056$
+  \item $0.9772$
+  \end{choices}
+\end{question}
+
+% 220.
+\begin{question}
+  某地每户居民每月对某种商品的需求量 (单位: 千克) 服从区间 $(7, 13)$ 上的均匀分布, 且这些居民对此种商品的需求是相互独立的. 某工厂为此地 30000 户居民供应此种商品, 根据中心极限定理, 若要以 0.99 的概率满足此地居民的需求, 则每月至少要约储备此种商品（\quad ）千克 (备用数据: $\Phi(2.33) = 0.99$)
+  \paren[D]
+  
+  \begin{choices}
+  \item $30000$
+  \item $9999$
+  \item $300000$
+  \item $300699$
+  \end{choices}
+\end{question}
+
+% 221.
+\begin{question}
+  某汽车销售点每天出售的汽车数服从参数为 $\lambda = 2$ 的泊松分布. 若一年 365 天都经营汽车销售, 且每天出售的汽车数是相互独立的, 则由中心极限定理, 一年中售出 700 辆以上的汽车的概率约等于
+  (备用数据: $\sqrt{730} \approx 27, \Phi(1.11) = 0.8665$)
+  \paren[A]
+
+  \begin{choices}
+  \item 0.8665
+  \item 0.1335
+  \item 0.0438
+  \item 0.0653
+  \end{choices}
+\end{question}
+
+% 222.
+\begin{question}
+  设总体 $X \sim* b(1, p)$, $X_1, X_2, \dots, X_n$ 为来自 $X$ 的一个简单样本, 由中心极限定理, 则当 $n$ 充分大时, $\sum_{i=1}^n X_i$ 近似服从
+  \paren[B]
+
+  \begin{choices}
+  \item $N(0, 1)$
+  \item $N(np, np(1-p))$
+  \item $N(p, p(1-p))$
+  \item $N\left(p, \frac{p(1-p)}{n}\right)$
+  \end{choices}
+\end{question}
+
+\section{样本及抽样分布}
+
+% 223.
+\begin{question}
+  设 $X_1, X_2, \dots, X_{15}$ 是来自正态总体 $N(0, 4)$ 的简单随机样本, 若 $\sum_{i=1}^{10} aX_i^2 / \sum_{i=11}^{15} X_i^2 \sim* F(10, 5)$, 则常数 $a$ 等于
+  \paren[B]
+
+  \begin{choices}
+    \item $1/4$
+    \item $1/2$
+    \item $1$
+    \item $2$
+  \end{choices}
+\end{question}
+
+% 224.
+\begin{question}
+  设 $X, Y$ 相互独立, 都服从 $N(0, 3^2)$ 分布. 设 $X_1, X_2, \dots, X_9$ 和 $Y_1, Y_2, \dots, Y_9$ 分别为来自总体 $X, Y$ 的简单随机样本, 则统计量 $U = \frac{X_1 + X_2 + \dots + X_9}{\sqrt{Y_1^2 + Y_2^2 + \dots + Y_9^2}}$ 的分布是
+  \paren[B]
+
+  \begin{choices}
+    \item $N(0, 27)$
+    \item $t(9)$
+    \item $\chi^2(9)$
+    \item $F(9, 1)$
+  \end{choices}
+\end{question}
+
+% 225.
+\begin{question}
+  设总体的分布函数为 $F(x)$, $X_1, X_2, \dots, X_n$ 是来自该总体的一个简单随机样本, $x_1, x_2, \dots, x_n$ 是一个样本观察值, 则以下说法不正确的是
+  \paren[C]
+
+  \begin{choices}
+    \item $X_1, X_2, \dots, X_n$ 的分布函数都为 $F(x)$
+    \item $x_1, x_2, \dots, x_n$ 是一组数
+    \item $(X_1, X_2, \dots, X_n)$ 的分布函数无法确定
+    \item $(x_1, x_2, \dots, x_n)$ 是 $(X_1, X_2, \dots, X_n)$ 的一个可能取值
+  \end{choices}
+\end{question}
+
+% 226.
+\begin{question}
+  设 $X_1, X_2, \dots, X_6$ 为来自正态总体 $N(0, 1)$ 的简单随机样本, 则统计量 $\frac{X_1^2 + X_2^2 + X_3^2}{X_4^2 + X_5^2 + X_6^2}$ 服从
+  \paren[D]
+
+  \begin{choices}
+    \item 正态分布
+    \item $\chi^2$分布
+    \item $t$分布
+    \item $F$分布
+  \end{choices}
+\end{question}
+
+% 227.
+\begin{question}
+  设总体 $X \sim* N(\mu, \sigma^2)$, $X_1, X_2, \dots, X_n$ 为取自 $X$ 的简单随机样本, $\overline{X}$ 和 $S^2$ 分别表示样本均值和样本方差, 则下列结论不正确的是
+  \paren[A]
+
+  \begin{choices}
+    \item $\overline{X} \sim* N(\mu, \sigma^2)$
+    \item $\frac{\overline{X} - \mu}{S / \sqrt{n}} \sim* t(n-1)$
+    \item $\frac{(n-1)S^2}{\sigma^2} \sim* \chi^2(n-1)$
+    \item $\frac{\sum_{i=1}^{n}(X_i - \mu)^2}{\sigma^2} \sim* \chi^2(n)$
+  \end{choices}
+\end{question}
+
+% 228.
+\begin{question}
+  设 $X_1, X_2, \dots, X_m, X_{m+1}, \dots, X_n$ 是来自总体 $N(0,1)$ 的简单样本, 则统计量 $\frac{(n-m)\sum_{i=1}^{m}X_i^2}{m\sum_{i=m+1}^{n}X_i^2}$ 服从的分布为
+  \paren[A]
+
+  \begin{choices}
+    \item $F(m, n-m)$
+    \item $F(n-m, m)$
+    \item $\chi^2(m)$
+    \item $\chi^2(n-m)$
+  \end{choices}
+\end{question}
+
+% 229.
+\begin{question}
+  总体服从均匀分布, $X_1, X_2, \dots, X_n$ 为其样本, $\overline{X}$ 为样本均值, 则当 $n$ 很大时, $\overline{X}$ 近似服从
+  \paren[D]
+
+  \begin{choices}
+    \item 均匀分布
+    \item $\chi^2$分布
+    \item $F$分布
+    \item 正态分布
+  \end{choices}
+\end{question}
+
+% 230.
+\begin{question}
+  总体 $X \sim* t(n)$, 则 $X^2$ 服从
+  \paren[C]
+
+  \begin{choices}
+    \item $F(n, 1)$
+    \item $F(n, 2)$
+    \item $F(1, n)$
+    \item $F(2, n)$
+  \end{choices}
+\end{question}
+
+% 231.
+\begin{question}
+  设 $X_1, X_2, \dots, X_n$ 为来自总体 $X$ 的简单随机样本, 且 $E(X) = \mu$, $D(X) = \sigma^2$, 则其样本均值 $\overline{X}$ 分布近似的服从
+  \paren[C]
+
+  \begin{choices}
+    \item $N(0,1)$
+    \item $N(\mu, \sigma^2)$
+    \item $N(\mu, \frac{\sigma^2}{n})$
+    \item $N(\mu, \frac{\sigma^2}{n^2})$
+  \end{choices}
+\end{question}
+
+% 232.
+\begin{question}
+  设 $X_1, X_2, X_3, X_4$ 为来自 $N(0, 2^2)$ 的一个简单随机样本, 已知统计量 $X = a(X_1 - 2X_2)^2 + b(3X_3 + 4X_4)^2$ 服从 $\chi^2$ 分布, 则 $a, b$ 的值是
+  \paren[D]
+
+  \begin{choices}
+    \item $20, 100$
+    \item $\sqrt{20}, 10$
+    \item $\frac{1}{\sqrt{20}}, \frac{1}{10}$
+    \item $1/20, 1/100$
+  \end{choices}
+\end{question}
+
+% 233.
+\begin{question}
+  设 $X_1, X_2, \dots, X_n$ 和 $Y_1, Y_2, \dots, Y_m$ 分别是来自总体 $X \sim* N(\mu_1, \sigma^2)$ 和 $Y \sim* N(\mu_2, \sigma^2)$ ($\mu_1, \mu_2, \sigma^2$ 均未知) 的简单随机样本, 样本均值分别为 $\overline{X}$, $\overline{Y}$, 若 $X, Y$ 相互独立, 则下列随机变量是统计量且服从正态分布的是
+  \paren[A]
+
+  \begin{choices}
+    \item $\overline{X} - \overline{Y}$
+    \item $\frac{\overline{X} - \mu_1}{\overline{Y} - \mu_2}$
+    \item $\frac{\overline{X}}{\overline{Y}}$
+    \item $\overline{X} - \overline{Y} - (\mu_1 - \mu_2)$
+  \end{choices}
+\end{question}
+
+% 234.
+\begin{question}
+  设 $X_1, X_2, X_3, X_4$ 为来自正态总体 $N(\mu, \sigma^2)$ 的简单随机样本, 则 $\frac{1}{\sigma^2}\sum_{i=1}^{4}(X_i - \bar{X})^2$ 的分布为
+  \paren[C]
+
+  \begin{choices}
+    \item $\chi^2(1)$
+    \item $\chi^2(2)$
+    \item $\chi^2(3)$
+    \item $\chi^2(4)$
+  \end{choices}
+\end{question}
+
+% 235.
+\begin{question}
+  设总体为 $X$, $X_1, X_2, \dots, X_n$ 是来自该总体的一个简单随机样本, 则 $X_1, X_2, \dots, X_n$ 必然满足
+  \paren[C]
+
+  \begin{choices}
+    \item $X_1, X_2, \dots, X_n$ 独立但不同分布
+    \item $X_1, X_2, \dots, X_n$ 不独立但同分布
+    \item $X_1, X_2, \dots, X_n$ 独立同分布
+    \item 以上都不对
+  \end{choices}
+\end{question}
+
+% 236.
+\begin{question}
+  设有一批产品共 $N$ 个, 需要进行抽样检验以了解其不合格率 $p$, 现从中抽出 $n$ 个逐一检查他们是否合格, 采用不放回抽样方式, 定义 $$X_i = \begin{cases} 1, & \text{第} i \text{次取到合格品} \\ 0, & \text{否则} \end{cases}, i=1, 2, \dots, n$$ 则 $P\{X_2 = 0 \mid X_1 = 1\}$ 等于
+  \paren[B]
+
+  \begin{choices}
+    \item $\frac{Np - 1}{N - 1}$
+    \item $\frac{Np}{N - 1}$
+    \item $p$
+    \item $\frac{(N-1)p}{N}$
+  \end{choices}
+\end{question}
+
+% 237.
+\begin{question}
+  设总体 $X$ 的密度函数为 $f(x)$, $X_1, X_2,\dots, X_n$ 是来自该总体的简单随机样本, 则 $(X_1, X_2, \dots, X_n)$ 的联合密度函数为
+  \paren[A]
+
+  \begin{choices}
+      \item $\prod_{i=1}^{n} f(x_i)$
+      \item $f^n(x)$
+      \item $\sum_{i=1}^{n}f(x_i)$
+      \item $nf(x)$
+  \end{choices}
+\end{question}
+
+% 238.
+\begin{question}
+  总体 $X$ 服从 $N(0,1)$ 分布, $X_1, X_2, \dots, X_n$ 为来自 $X$ 的一个简单随机样本, 记 $\overline{X}$ 为样本均值, $s$ 为样本标准差, 则下列选项正确的是
+  \paren[D]
+
+  \begin{choices}
+    \item $n\overline{X} \sim* N(0, 1)$
+    \item $(n-1)S^2 \sim* \chi^2(n)$
+    \item $\overline{X}/S \sim* t(n-1)$
+    \item $(n-1)X_1^2 / \sum_{i=1}^{n}X_i^2 \sim* F(1, n-1)$
+  \end{choices}
+\end{question}
+
+% 239.
+\begin{question}
+  设总体 $X \sim* N(\mu, \sigma^2)$, 其中 $\mu, \sigma^2$ 已知, $X_1, X_2, \dots, X_n$ ($n \ge 3$) 为来自总体 $X$ 的样本, $\overline{X}$ 为样本均值, $S^2$ 为样本方差, 则下列统计量中服从 $t$ 分布的是
+  \paren[D]
+
+  \begin{choices}
+    \item $\frac{\overline{X}}{\sqrt{\frac{(n-1)S^2}{\sigma^2}}}$
+    \item $\frac{\overline{X} - \mu}{\sqrt{\frac{(n-1)S^2}{\sigma^2}}}$
+    \item $\frac{\frac{\overline{X} - \mu}{\sigma / \sqrt{n}}}{\sqrt{\frac{(n-1)S^2}{\sigma^2}}}$
+    \item $\frac{\frac{\overline{X} - \mu}{\sigma / \sqrt{n}}}{\sqrt{\frac{S^2}{\sigma^2}}}$
+  \end{choices}
+\end{question}
+
+% 240.
+\begin{question}
+  设总体 $X \sim* N(\mu, \sigma^2)$, 其中 $\mu$ 已知, $\sigma^2$ 未知, $X_1, X_2, \dots, X_n$ 为其样本, 则下列说法中正确的是
+  \paren[D]
+
+  \begin{choices}
+    \item $\frac{\sigma^2}{n}\sum_{i=1}^{n}(X_i - \mu)^2$ 是统计量
+    \item $\frac{1}{n}\sum_{i=1}^{n}X_i^2$ 是统计量
+    \item $\frac{\sigma^2}{n-1}\sum_{i=1}^{n}(X_i - \mu)^2$ 是统计量
+    \item $\frac{\mu}{n}\sum_{i=1}^{n}X_i^2$ 是统计量
+  \end{choices}
+\end{question}
+
+% 241.
+\begin{question}
+  设 $X \sim* N(\mu, \sigma^2)$, 其中 $\mu, \sigma^2$ 均未知, $X_1, X_2, X_3, X_4$ 为其样本, 下列各项不是统计量的是
+  \paren[B]
+
+  \begin{choices}
+    \item $\frac{1}{4}\sum_{i=1}^{4}X_i$
+    \item $X_1 + X_4 - 2\mu$
+    \item $\frac{1}{4}\sum_{i=1}^{4}(X_i - \overline{X})^2$
+    \item $\frac{1}{3}\sum_{i=1}^{4}(X_i - \overline{X})^2$
+  \end{choices}
+\end{question}
+
+% 242.
+\begin{question}
+  设随机变量 $X \sim* N(0, 1), Y \sim* N(0, 1)$, 则
+  \paren[D]
+
+  \begin{choices}
+    \item $X + Y$ 服从正态分布
+    \item $X^2 + Y^2$ 服从 $\chi^2$ 分布
+    \item $X^2 / Y^2$ 服从 $F$ 分布
+    \item $X^2, Y^2$ 服从 $\chi^2$ 分布
+  \end{choices}
+\end{question}
+
+% 243.
+\begin{question}
+  设 $X_1, X_2, \dots, X_9$ 是来自正态总体 $N(0, \sigma^2)$ 的简单随机样本, 则服从 $F$ 分布的统计量是
+  \paren[D]
+
+  \begin{choices}
+    \item $\frac{X_1^2 + X_2^2 + X_3^2}{X_4^2 + X_5^2 + \dots + X_9^2}$
+    \item $\frac{X_1^2 + X_2^2 + X_3^2 + X_4^2}{X_4^2 + X_5^2 + X_6^2 + X_7^2}$
+    \item $\frac{X_1^2 + X_2^2 + X_3^2}{2(X_4^2 + X_5^2 + \dots + X_9^2)}$
+    \item $\frac{2(X_1^2 + X_2^2 + X_3^2)}{X_4^2 + X_5^2 + \dots + X_9^2}$
+  \end{choices}
+\end{question}
+
+% 244.
+\begin{question}
+  设总体 $X$ 的概率密度为 $f(x)$, 而 $X_1, X_2, \dots, X_n$ 是来自总体 $X$ 的简单随机样本, $\overline{X}$, $X_{(1)}, X_{(n)}$ 相应为 $X_1, X_2, \dots, X_n$ 的样本均值、最小观测值和最大观测值, 则 $nf(x)\left[\int_{-\infty}^{x} f(t)dt\right]^{n-1}$ 是
+  \paren[B]
+
+  \begin{choices}
+    \item $X_{(1)}$ 的概率密度
+    \item $X_{(n)}$的概率密度
+    \item $X_1$ 的概率密度
+    \item $\overline{X}$ 的概率密度
+  \end{choices}
+\end{question}
+
+% 245.
+\begin{question}
+  设 $X_1, X_2, X_3$ 是来自正态总体 $N(0, 2)$ 的简单随机样本, 若 $aX_1^2 + b(X_2 - X_3)^2 \sim* \chi^2(2)$, 则常数 $a, b$ 分别等于多少
+  \paren[D]
+
+  \begin{choices}
+    \item $\sqrt{2}, 2$
+    \item $2, 4$
+    \item $1/\sqrt{2}, 1/2$
+    \item $1/2, 1/4$
+  \end{choices}
+\end{question}
+
+% 246.
+\begin{question}
+  设 $X_1, X_2, \dots, X_n$ 是来自正态总体 $N(0, 1)$ 的简单随机样本, 记 $\overline{X}$ 为样本均值, $S^2$ 为样本方差, 令 $T = \overline{X} / S$, 若 $P\{T > c\} = \alpha$, 则 $c$ 等于
+  \paren[D]
+
+  \begin{choices}
+    \item $t_\alpha(n-1)$
+    \item $t_\alpha(n)$
+    \item $\frac{t_\alpha(n)}{\sqrt{n}}$
+    \item $\frac{t_\alpha(n-1)}{\sqrt{n}}$
+  \end{choices}
+\end{question}
+
+% 247.
+\begin{question}
+  总体 $X \sim* N(\mu, \sigma^2)$, 其中 $\mu, \sigma^2$ 均已知, $X_1, X_2, \dots, X_n$ 为其样本, $\overline{X}$ 为样本均值, 则 $D(\overline{X})$ 等于
+  \paren[B]
+
+  \begin{choices}
+    \item $n\sigma^2$
+    \item $\frac{\sigma^2}{n}$
+    \item $(n-1)\sigma^2$
+    \item $\frac{\sigma^2}{n-1}$
+  \end{choices}
+\end{question}
+
+% 248.
+\begin{question}
+  设 $X_1, X_2, X_3, X_4$ 是来自正态总体 $N(0, 1)$ 的简单随机样本, $\overline{X}$ 为样本均值, 则 $4\overline{X}^2$ 服从
+  \paren[C]
+
+  \begin{choices}
+    \item $\chi^2(4)$
+    \item $\chi^2(3)$
+    \item $\chi^2(1)$
+    \item $\chi^2(2)$
+  \end{choices}
+\end{question}
+
+% 249.
+\begin{question}
+  设总体 $X$ 服从两点分布: $P\{X = 1\} = p$, $P\{X = 0\} = 1 - p$ ($0 < p < 1$), $p$ 是未知参数, $X_1, X_2, \dots, X_n$ 为其样本, 则样本均值 $\overline{X}$ 的方差 $D(\overline{X})$ 等于
+  \paren[B]
+
+  \begin{choices}
+    \item $p(1-p)$
+    \item $\frac{1}{n}p(1-p)$
+    \item $np(1-p)$
+    \item $\frac{1}{n^2}p(1-p)$
+  \end{choices}
+\end{question}
+
+% 250.
+\begin{question}
+  设总体 $X \sim* b(20, p)$ ($0 < p < 1$), $p$ 是未知参数, $X_1, X_2, \dots, X_n$ 为其样本, 下述选项中不是统计量的是
+  \paren[D]
+
+  \begin{choices}
+    \item $X_1 + X_2 + \dots + X_n$
+    \item $\min\{X_1, X_2, \dots, X_n\}$
+    \item $X_1 + \overline{X}$
+    \item $X_1 + E(\overline{X})$
+  \end{choices}
+\end{question}
+
+% 251.
+\begin{question}
+  设 $X_1, X_2, \dots, X_6$ 为来自正态总体 $N(0, 1)$ 的简单随机样本, 则统计量 $(\frac{X_1 + X_2 + X_3}{\sqrt{3}})^2 + (\frac{X_4 + X_5}{\sqrt{2}})^2 + X_6^2$ 服从
+  \paren[A]
+
+  \begin{choices}
+    \item $\chi^2(3)$ 分布
+    \item $\chi^2(4)$ 分布
+    \item $\chi^2(5)$ 分布
+    \item $\chi^2(6)$ 分布
+  \end{choices}
+\end{question}
+
+% 252.
+\begin{question}
+  设 $X_1, X_2, \dots, X_6$ 为来自 $N(0, 1)$ 的一个简单随机样本, 已知统计量 $Y = (X_1 + X_2 + X_3)^2 + (X_4 + X_5 + X_6)^2$, 要使 $CY$ 服从 $\chi^2$ 分布, 则 $C$ 的值
+  \paren[C]
+
+  \begin{choices}
+    \item $2$
+    \item $3$
+    \item $1/3$
+    \item $1/2$
+  \end{choices}
+\end{question}
+
+% 253.
+\begin{question}
+  设 $X_1, X_2, \dots, X_{n_1}$ 和 $Y_1, Y_2, \dots, Y_{n_2}$ 分别是来自正态总体 $X \sim* N(\mu_1, \sigma^2)$ 和 $Y \sim* N(\mu_2, \sigma^2)$ 的样本, 若 $X, Y$ 相互独立, 则统计量 $S_1^2 / S_2^2$ 的分布是
+  \paren[D]
+
+  \begin{choices}
+    \item $N(\mu_1 + \mu_2, 2\sigma^2)$
+    \item $t(n_1 + n_2 - 1)$
+    \item $\chi^2(n_1 + n_2 - 1)$
+    \item $F(n_1 - 1, n_2 - 1)$
+  \end{choices}
+\end{question}
+
+% 254.
+\begin{question}
+  总体 $X$ 的分布为 $N(0, 1)$, $X_1, X_2$ 为取自 $X$ 的简单样本, 则下列选项不正确的是 \paren[B]
+  
+  \begin{choices}
+    \item $X_1 + X_2$和$X_1 - X_2$独立
+    \item $\frac{(X_1 + X_2)^2}{\sqrt{2}} \sim* \chi^2(1)$
+    \item $\frac{(X_1 + X_2)^2}{(X_1 - X_2)^2} \sim* F(1, 1)$
+    \item $\frac{(X_1 - X_2)^2}{2} + \frac{(X_1 - X_2)^2}{2} \sim* \chi^2(2)$
+  \end{choices}
+\end{question}
+
+% 255.
+\begin{question}
+  设总体$X$服从$N(\mu, \sigma^2)$, $X_1,X_2, \dots, X_n$为来自$X$的一个简单随机样本, $\overline{X} = \frac{1}{n}\sum_{i=1}^{n}X_i, S^2 = \frac{1}{n-1}\sum_{i=1}^{n}(X_i - \overline{X})^2$, 则下列选项正确的是 \paren[D]
+  
+  \begin{choices}
+    \item $\frac{\sqrt{n}\overline{X}}{S} \sim* N(0,1)$
+    \item $(n-1)S^2 \sim* \chi^2(n-1)$
+    \item $\frac{\sqrt{n}(\overline{X} - \mu)}{S} \sim* t(n)$
+    \item $\sqrt{\frac{n}{n+1}}(X_{n+1} - \overline{X})/S \sim* t(n-1)$
+  \end{choices}
+\end{question}
+
+% 256.
+\begin{question}
+  设总体服从均匀分布 $U(0, \theta)$, $X_1, X_2, \dots, X_n$ 是来自该总体的一个简单随机样本, 则以下说法不正确的是 \paren[C]
+  
+  \begin{choices}
+    \item $E\left(\frac{1}{n}\sum_{i=1}^{n}X_i\right) = \frac{\theta}{2}$
+    \item $D\left(\frac{1}{n}\sum_{i=1}^{n}X_i\right) = \frac{\theta^2}{12n}$
+    \item $n$ 充分大时, $\frac{1}{n}\sum_{i=1}^{n}X_i$ 近似服从 $N(0, 1)$
+    \item $E\left(\prod_{i=1}^{n}X_i\right) = \left(\frac{\theta}{2}\right)^n$
+  \end{choices}
+\end{question}
+
+\section{参数估计}
+
+% 257.
+\begin{question}
+  设 $X_1, X_2, \dots, X_n$ 为总体 $X$ 的一个样本, 总体 $X$ 的概率密度为 $f(x) = \begin{cases} \frac{6x(\theta - x)}{\theta^3}, & 0 < x < \theta \\ 0, & \text{其他} \end{cases}$, $\theta > 0$, 则 $\theta$ 的矩估计量为 \paren[B]
+  
+  \begin{choices}
+    \item $\frac{\overline{X}}{2}$
+    \item $2\overline{X}$
+    \item $\overline{X}$
+    \item $\frac{2}{\overline{X}}$
+  \end{choices}
+\end{question}
+
+% 258.
+\begin{question}
+  关于样本平均数和总体平均数的说法, 下列正确的是哪个 \paren[B]
+  
+  \begin{choices}
+    \item 前者是一个数值, 后者是一个随机变量
+    \item 前者是一个随机变量, 后者是一个数值
+    \item 两者都是随机变量
+    \item 两者都是数
+  \end{choices}
+\end{question}
+
+% 259.
+\begin{question}
+  设总体 $X$ 服从正态分布 $N(\mu, \sigma^2)$, $X_1, X_2, \dots, X_n$ 是来自 $X$ 的样本, 则 $\sigma^2$ 的极大似然估计为\paren[A]
+  
+  \begin{choices}
+    \item $\frac{1}{n}\sum_{i=1}^{n}(X_i - \overline{X})^2$
+    \item $\frac{1}{n-1}\sum_{i=1}^{n}(X_i - \overline{X})^2$
+    \item $\frac{1}{n}\sum_{i=1}^{n}X_i^2$
+    \item $X^2$
+  \end{choices}
+\end{question}
+
+% 260.
+\begin{question}
+  设总体 $X$ 的密度为 $f(x, \theta) = e^{-(x - \theta)}$, $x > \theta$, $X_1, X_2, \dots, X_n$ 是来自 $X$ 的样本, 则未知参数 $\theta$ 的极大似然估计量为\paren[B]
+  
+  \begin{choices}
+    \item $\overline{X}$
+    \item $\min\{X_i, i = 1, 2, \dots, n\}$
+    \item $2\overline{X}$
+    \item $\max\{X_i, i = 1, 2, \dots, n\}$
+  \end{choices}
+\end{question}
+
+% 261.
+\begin{question}
+  设 $X_1, X_2, \dots, X_n$ 是来自总体 $N(\mu, 1)$ 的样本, $Y_1, Y_2, \dots, Y_m$ 是来自总体 $N(\mu, 2^2)$ 的样本, 两个总体独立, 考虑 $\mu$ 的如下形式的无偏估计: $T = a\sum_{i=1}^{n}X_i + b\sum_{i=1}^{m}Y_i$, 则当 $a, b$ 分别等于多少时（\quad ）, $T$ 是这种形式里面最有效的估计 \paren[A]
+  
+  \begin{choices}
+    \item $a = \frac{4}{4n + m}, b = \frac{1}{4n + m}$
+    \item $a = \frac{1}{n}, b = \frac{1}{m}$
+    \item $a = \frac{1}{4n + m}, b = \frac{4}{4n + m}$
+    \item $a = \frac{m}{m + n}, b = \frac{n}{m + n}$
+  \end{choices}
+\end{question}
+
+% 262.
+\begin{question}
+  总体 $X \sim* N(\mu, 4^2)$, $X_1, X_2, \dots, X_{16}$ 为来自$X$ 的一个简单样本, 经观察可得 $\overline{x} = 6$, 则 $\mu$ 的置信度为 $0.95$ 的置信区间为 \paren[B]
+  
+  \begin{choices}
+    \item $(4.02, 7.98)$
+    \item $(4.04, 7.96)$
+    \item $(4.00, 8.00)$
+    \item $(3.04, 6.96)$
+  \end{choices}
+\end{question}
+
+% 263.
+\begin{question}
+  无论 $\sigma^2$ 是否已知, 正态总体均值 $\mu$ 的置信区间的中心都是 \paren[B]
+  
+  \begin{choices}
+    \item $\mu$
+    \item $\overline{X}$
+    \item $\sigma^2$
+    \item $S^2$
+  \end{choices}
+\end{question}
+
+% 264.
+\begin{question}
+  设总体 $X$ 的概率密度函数为 $f(x;\theta) = \begin{cases} \theta e^{-\theta x},x>0 \\ 0, \text{其他} \end{cases} $, 其中$\theta>0$为未知参数, $X_1, X_2, \dots, X_n$为样本, 则$\theta$的极大似然估计量$\hat{\theta}$等于\paren[B]
+    
+  \begin{choices}
+      \item $\overline{X}$
+      \item $\overline{X}^{-1}$
+      \item $S$
+      \item $\min\{X_i, i=1, 2, \dots, n\}$
+    \end{choices}
+\end{question}
+
+% 265.
+\begin{question}
+  设 $X_1, X_2, \dots, X_n$ 为总体 $X$ 的一个样本, 总体 $X$ 的概率密度为 $f(x) = \begin{cases} \lambda^2 x e^{-\frac{\lambda^2 x^2}{2}}, & x > 0 \\ 0, & x \le 0 \end{cases}$, $\lambda > 0$, 则 $\lambda$ 的极大似然估计量为\paren[C]
+  
+  \begin{choices}
+    \item $\frac{2n}{\sum_{i=1}^{n}X_i^2}$
+    \item $\frac{n}{\sum_{i=1}^{n}X_i^2}$
+    \item $\sqrt{\frac{2n}{\sum_{i=1}^{n}X_i^2}}$
+    \item $\sqrt{\frac{n}{\sum_{i=1}^{n}X_i^2}}$
+  \end{choices}
+\end{question}
+
+% 266.
+\begin{question}
+  设罐子里装有黑球和白球, 有放回地抽取一个容量为 $n$ 的样本, 其中 $k$ 个白球, 则罐子里黑球数与白球数之比 $R$ 的极大似然估计量为 \paren[B]
+  
+  \begin{choices}
+    \item $k/n$
+    \item $\frac{n-k}{k}$
+    \item $1$
+    \item $n/k$
+  \end{choices}
+\end{question}
+
+% 267.
+\begin{question}
+  设总体 $X$ 的分布律为 $P\{X = x\} = (1-p)^{x-1}p, x = 1, 2, \dots$, $X_1, X_2, \dots, X_n$ 是来自 $X$ 的样本, 则 $p$ 的矩估计量和极大似然估计量分别为 \paren[B]
+ 
+  \begin{choices}
+    \item $\overline{X}, \overline{X}$
+    \item $\overline{X}^{-1}, \overline{X}^{-1}$
+    \item $\overline{X}, \overline{X}^{-1}$
+    \item $\overline{X}^{-1}, \overline{X}$
+  \end{choices}
+\end{question}
+
+% 268.
+\begin{question}
+  设 $X_1, X_2, \dots, X_n$ 是取自总体 $N(0, \sigma^2)$ 的样本, 则可作为 $\sigma^2$ 的无偏估计量是\paren[A]
+  
+  \begin{choices}
+    \item $\frac{1}{n}\sum_{i=1}^{n}X_i^2$
+    \item $\frac{1}{n-1}\sum_{i=1}^{n}X_i^2$
+    \item $\frac{1}{n}\sum_{i=1}^{n}X_i$
+    \item $\frac{1}{n-1}\sum_{i=1}^{n}X_i$
+  \end{choices}
+\end{question}
+
+% 269.
+\begin{question}
+  设某工厂生产的某种特种金属丝的折断力 $X$ (单位: kg) 服从 $N(\mu, 8^2)$ 分布. 现对该工厂生产的这种特种金属丝的折断力测量 16 次, 得样本均值 $\overline{x} = 575.2$ kg, 则 $\mu$ 的置信水平为 95\% 的置信区间为
+  (备用数据: $z_{0.025} = 1.96$, $z_{0.05} = 1.65$)
+  \paren[D]
+
+  \begin{choices}
+    \item $(581.28, 589.12)$
+    \item $(561.28, 569.12)$
+    \item $(566.28, 574.12)$
+    \item $(571.28, 579.12)$
+  \end{choices}
+\end{question}
+
+% 270.
+\begin{question}
+  设总体$X \sim* N(\mu, \sigma^2)$, $\sigma^2$未知, 若样本容量$n$和置信水平均不变, 则对于不同的样本观察值, $\mu$的置信区间的长度\paren[D]
+  
+  \begin{choices}
+      \item 变长
+      \item 变短
+      \item 不变
+      \item 不能确定
+  \end{choices}
+\end{question}
+
+% 271.
+\begin{question}
+  总体$X$的分布律为
+  $$\begin{pmatrix}
+  -3 & -1 & 0 & 1 & 2 \\
+  p^2 & p(1-p) & p(1-p) & 1-2p & p^2\\
+  \end{pmatrix},$$
+
+  其中$p(0<p<1/2)$ 是未知参数, 利用总体 $X$ 的一个容量为 $10$ 的如下样本值: 1, 1, 1, 0, 0, -1, -1, 1, -3, 2, 可得$p$的矩估计值为 \paren[C]
+  
+  \begin{choices}
+      \item $0.1$
+      \item $0.2$
+      \item $0.3$
+      \item $1$
+  \end{choices}
+\end{question}
+
+% 272.
+\begin{question}
+  设总体$X \sim* N(\mu, \sigma^2)$, $X_1, X_2,\dots, X_n$是来自总体$X$的简单随机样本, 记样本标准差为$S$, 则 \paren[C]
+  
+  \begin{choices}
+    \item $S$是$\sigma$的矩估计量但不是极大似然估计量
+    \item $S$是$\sigma$的极大似然估计量但不是矩估计量
+    \item $S$既不是$\sigma$的矩估计量也不是极大似然估计量
+    \item $S$既是$\sigma$的矩估计又是极大似然估计量
+  \end{choices}
+\end{question}
+
+% 273.
+\begin{question}
+  设总体 $X$为$[0, a]$上服从均匀分布, 其中$a>0$未知, 则$a$的矩估计量为 \paren[C]
+  
+  \begin{choices}
+      \item $\overline{X}$
+      \item $\min\{X_i, i=1, 2, \dots, n\}$
+      \item $2\overline{X}$
+      \item $\max\{X_i, i = 1, 2, \dots, n\}$
+  \end{choices}
+\end{question}
+
+% 274.
+\begin{question}
+  设总体$X$具有分布密度$f(x, \alpha) = (\alpha + 1)x^{\alpha}, 0<x<1$, 其中$\alpha>-1$是未知参数, $X_1, X_2, \dots, X_n$为一个样本, 试求参数$\alpha$的矩估计量为 \paren[D]
+  
+  \begin{choices}
+        \item $\frac{\overline{X} - 2}{1 - \overline{X}}$
+        \item $\frac{2\overline{X} - 1}{2 - \overline{X}}$
+        \item $\frac{\overline{X} - 1}{2 - \overline{X}}$
+        \item $\frac{2\overline{X} - 1}{1 - \overline{X}}$
+  \end{choices}
+\end{question}
+
+% 275.
+\begin{question}
+  设总体$X$具有分布密度$f(x, \alpha) = (\alpha + 1)x^{\alpha}, 0 < x < 1$, 其中$\alpha>-1$是未知参数, $X_1, X_2, \dots, X_n$为一个样本, 试求参数$\alpha$的极大似然估计为 \paren[C]
+  
+  \begin{choices}
+    \item $-1 - \frac{\sum_{i=1}^{n}\ln X_i}{n}$
+    \item $-1 + \frac{\sum_{i=1}^{n}\ln X_i}{n}$
+    \item $-1 - \frac{n}{\sum_{i=1}^{n}\ln X_i}$
+    \item $-1 + \frac{n}{\sum_{i=1}^{n}\ln X_i}$
+  \end{choices}
+\end{question}
+
+% 276.
+\begin{question}
+  设$X_1, X_2,\dots, X_n$是取自总体 $X$ 的一个简单样本, 则$E(X^2)$的矩估计是 \paren[D]
+  
+  \begin{choices}
+      \item $S_1^2 = \frac{1}{n-1}\sum_{i=1}^{n}(X_i - \overline{X})^2$
+      \item $S_2^2 = \frac{1}{n}\sum_{i=1}^{n}(X_i - \overline{X})^2$
+      \item $S_1^2 + \overline{X}^2$
+      \item $S_2^2 + \overline{X}^2$
+  \end{choices}
+\end{question}
+
+% 277.
+\begin{question}
+  若 $\hat{\theta}$ 为未知参数 $\theta$ 的点估计量, 且满足 $E\hat{\theta} = \theta$, 则称 $\hat{\theta}$ 是 $\theta$ 的 \paren[A]
+  
+  \begin{choices}
+    \item 无偏估计量
+    \item 相合估计量
+    \item 渐近无偏估计量
+    \item 有效估计量
+  \end{choices}
+\end{question}
+
+% 278.
+\begin{question}
+  设 $X_1, X_2, X_3$ 是来自正态总体 $N(0, \sigma^2)$ 的样本, 已知统计量 $c(2X_1^2 - X_2^2 + X_3^2)$ 是方差 $\sigma^2$ 的无偏估计量, 则常数 $c$ 等于 \paren[B]
+  
+  \begin{choices}
+    \item $1/4$
+    \item $1/2$
+    \item $2$
+    \item $4$
+  \end{choices}
+\end{question}
+
+% 279.
+\begin{question}
+  设 $X_1, X_2, X_3$ 是取自 $N(\mu, 1)$ 的样本, 以下 $\mu$ 的四个无偏估计量中最有效的是 \paren[D]
+  
+  \begin{choices}
+    \item $\hat{\mu}_1 = \frac{1}{5}X_1 + \frac{3}{10}X_2 + \frac{1}{2}X_3$
+    \item $\hat{\mu}_2 = \frac{1}{3}X_1 + \frac{2}{9}X_2 + \frac{4}{9}X_3$
+    \item $\hat{\mu}_3 = \frac{1}{3}X_1 + \frac{1}{6}X_2 + \frac{1}{2}X_3$
+    \item $\hat{\mu}_4 = \frac{1}{3}X_1 + \frac{1}{3}X_2 + \frac{1}{3}X_3$
+  \end{choices}
+\end{question}
+
+% 280.
+\begin{question}
+  甲乙是两个无偏估计量, 如果甲估计量的方差小于乙估计量的方差, 则称 \paren[D]
+  
+  \begin{choices}
+    \item 甲是充分估计量
+    \item 甲、乙一样有效
+    \item 乙比甲有效
+    \item 甲比乙有效
+  \end{choices}
+\end{question}
+
+% 281.
+\begin{question}
+  设总体$X$在$[0, a]$上服从均匀分布, 其中$a>0$未知, 则$a$的无偏估计量为 \paren[D]
+  
+  \begin{choices}
+      \item $\hat{\mu_1} = \frac{1}{2}X_1 + \frac{1}{3}X_2$
+      \item $\hat{\mu_2} = \frac{1}{2}X_1 + \frac{1}{6}X_2 + \frac{1}{3}X_3$
+      \item $\hat{\mu_3} = \frac{1}{4}X_1 + \frac{1}{2}X_2 + \frac{1}{3}X_3$
+      \item $\hat{\mu_4} = X_1 + \frac{1}{3}X_2 + \frac{2}{3}X_3$
+  \end{choices}
+\end{question}
+
+% 282.
+\begin{question}
+  设$X_1, X_2, \dots, X_n$为总体$X$的一个随机样本, $E(X) = \mu$, $D(X) = \sigma^2$, $\hat{\sigma}^2 = C\sum_{i=1}^{n}(X_{i+1} - X_i)^2$为$\sigma^2$的无偏估计, 则$C$等于 \paren[C]
+  
+  \begin{choices}
+    \item $\frac{1}{n}$
+    \item $\frac{1}{n-1}$
+    \item $\frac{1}{2(n-1)}$
+    \item $\frac{1}{n-2}$
+  \end{choices}
+\end{question}
+
+% 283.
+\begin{question}
+  设$X_1, X_2, \dots, X_n$为总体$X$的一个随机样本, $E(X) = \mu, D(X) = \sigma^2$, 以下是$\sigma^2$的无偏估计量是 \paren[B]
+  
+  \begin{choices}
+    \item $\frac{1}{n}\sum_{i=1}^{n}(X_i - \overline{X})^2$
+    \item $\frac{1}{n-1}\sum_{i=1}^{n}(X_i - \overline{X})^2$
+    \item $\frac{1}{n}\sum_{i=1}^{n}X_i^2$
+    \item $\overline{X}^2$
+  \end{choices}
+\end{question}
+
+% 284.
+\begin{question}
+  总体$X \sim* N(\mu, \sigma^2), \mu, \sigma^2$均未知, $X_1, X_2, \dots, X_n$为来自$X$ 的一个简单样本, $\overline{X}, S^2$分别为其样本均值和样本方差, 则 \paren[C]
+  
+  \begin{choices}
+      \item $S$是$\sigma$的无偏估计量
+      \item $S$是$\sigma$的极大似然估计量
+      \item $S$是$\sigma$的相合估计量.
+      \item $S^2$是$\sigma^2$的极大似然估计量
+  \end{choices}
+\end{question}
+
+% 285.
+\begin{question}
+  在其他条件不变的情形下, 对未知参数的置信水平为 $1-\alpha$ 的置信区间而言 \paren[A]
+  
+  \begin{choices}
+    \item $\alpha$ 越大, 置信区间长度越短
+    \item $\alpha$ 越大, 置信区间长度越长
+    \item $\alpha$ 越小, 置信区间长度越短
+    \item $\alpha$ 与置信区间长度没有关系
+  \end{choices}
+\end{question}
+
+% 286.
+\begin{question}
+  未知参数的置信水平为$1-\alpha$的置信区间表示 \paren[A]
+  \begin{choices}
+    \item 以至少$1-\alpha$的可能性包含了未知参数真值的区间
+    \item 以至少$\alpha$的可能性包含了未知参数真值的区间
+    \item 总体参数取值的变动范围
+    \item 抽样误差的最大可能范围
+  \end{choices}
+\end{question}
+
+% 287.
+\begin{question}
+  设$X \sim* N(\mu, \sigma^2)$, $\mu$, $\sigma^2$均未知, 从中抽取容量为16的样本, 其样本均值为$\overline{x}$, 样本标准差为$s$, 则总体均值$\mu$的置信度为95\% 的置信区间为 \paren[C]
+  
+  \begin{choices}
+    \item $\overline{x} \pm \frac{s}{4}t_{0.025}(16)$
+    \item $\overline{x} \pm \frac{s}{4}t_{0.05}(16)$
+    \item $\overline{x} \pm \frac{s}{4}t_{0.025}(15)$
+    \item $\overline{x} \pm \frac{s}{4}t_{0.05}(15)$
+  \end{choices}
+\end{question}
+
+% 288.
+\begin{question}
+  已知某种木材横纹抗压力 (单位: 公斤/平方厘米) 的实验值服从正态分布 $N(\mu, \sigma^2)$, 现测试 36 个试件的横纹抗压力, 		
+  得到其平均值为 460.5, 标准差为 12, 则 $\mu$ 的置信水平为 0.95 的置信区间为(结果保留两位小数. 备用数据: $t_{0.025}(35) = 2.0301$, $t_{0.05}(35) = 1.6896$, $t_{0.025}(36) = 2.0281$, $t_{0.05}(36) = 1.6883$ )
+  \paren[C]
+  
+  \begin{choices}
+    \item (455.12, 463.88)
+    \item (456.34, 464.45)
+    \item (456.44, 464.56)
+    \item (457.12, 463.88)
+  \end{choices}
+\end{question}
+
+% 289.
+\begin{question}
+  设 $X \sim* N(\mu, \sigma^2)$, $\mu, \sigma^2$ 未知, 从中抽取容量为 $n$ 的样本, 其样本方差记为 $S^2$。 若总体方差 $\sigma^2$ 的置信水平为 $1 - \alpha$ 的等尾置信区间为 $(aS^2, bS^2)$, 则 $a, b$ 分别等于 \paren[A]
+  
+  \begin{choices}
+    \item $\frac{n-1}{\chi^2_{\alpha/2}(n-1)}, \frac{n-1}{\chi^2_{1-\alpha/2}(n-1)}$
+    \item $\frac{n}{\chi^2_{\alpha/2}(n)}, \frac{n}{\chi^2_{1-\alpha/2}(n)}$
+    \item $\frac{n-1}{\chi^2_{\alpha}(n-1)}, \frac{n-1}{\chi^2_{1-\alpha}(n-1)}$
+    \item $\frac{n}{\chi^2_{\alpha}(n)}, \frac{n}{\chi^2_{1-\alpha}(n)}$
+  \end{choices}
+\end{question}
+
+% 290.
+\begin{question}
+  设总体 $X \sim* N(\mu, \sigma^2)$, $\mu, \sigma^2$ 均未知, 从中抽取容量为 $n$ 的样本, 其样本均值记为 $\overline{X}$, 样本方差记为 $S^2$. 设随机变量 $L$ 是关于 $\mu$ 的置信水平为 $1 - \alpha$ 的置信区间的长度, 则 $EL^2$ 等于 \paren[A]
+  
+  \begin{choices}
+    \item $\frac{4\sigma^2}{n}t^2_{\alpha/2}(n-1)$
+    \item $\frac{2\sigma^2}{n}t^2_{\alpha/2}(n-1)$
+    \item $\frac{4\sigma^2}{n}t^2_{\alpha}(n-1)$
+    \item $\frac{2\sigma^2}{n}t^2_{\alpha}(n-1)$
+  \end{choices}
+\end{question}
+
+\newpage
+\thispagestyle{empty}
+\addtocounter{page}{-1}
+
+\section*{致谢}
+
+\begin{itemize}
+  \item 感谢\href{https://gitee.com/xkwxdyy}{@xkwxdyy}开源的\LaTeX{}模板\href{https://gitee.com/xkwxdyy/exam-zh}{exam-zh}，让我能够快速地完成排版。
+  \item 感谢不知名学长/学姐整理好的概率论与数理统计码题题库的图片版。我找到的压缩包内包含一个使用说明txt，名称为\,\verb|简陋题库使用方法！（必看！）.txt|，可惜没有提到名字。
+  \item 感谢开源大语言模型\href{https://www.deepseek.com/}{DeepSeek}，没有它的视觉识别，我无法快速完成这个项目\sout{只能手敲公式折磨自己}。
+\end{itemize}
+
+\section*{更新日志}
+\begin{itemize}
+  \item version:1.0(2025-02-06): 添加了概率论与数理统计码题题库。
+\end{itemize}
+
+\end{document}
